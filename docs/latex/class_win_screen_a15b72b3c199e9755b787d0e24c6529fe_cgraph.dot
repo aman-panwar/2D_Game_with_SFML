@@ -1,0 +1,22 @@
+digraph "WinScreen::update"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="WinScreen::update",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="FileHandler::getLevelCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_file_handler.html#a41481fac05262d160998ec10aa34cd9d",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="FileHandler::getLevelInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_file_handler.html#a6079abe1f1c5077896b8b3c7a33bade8",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="ScreenManager::GetManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_screen_manager.html#a7ed4e4407bf8d4518fd21cb8b2638f79",tooltip="lazy initialises the ScreenManager and sets the initial screen of the gmae"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="ScreenManager::goToScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_screen_manager.html#a6c50d7beedf85938140fd2bbfb4efb99",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Button::isClicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_button.html#acd766bf2e64e1aa93ad4c8a16b343347",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="TextButton::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_text_button.html#a401808bb6c1a6e2d0a751121d9cdb218",tooltip="play the approprite sound, changes colour, and changes the clicked state of the button"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Button::updateClickState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_button.html#a6c3f8065e10bd4340846ed0fffb3ca82",tooltip="saves if mouse was pressed over the button"];
+}

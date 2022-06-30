@@ -1,0 +1,14 @@
+digraph "FileHandler::getLevelInfo"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="FileHandler::getLevelInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="LevelScreen::manageButton\lClick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_level_screen.html#afcc71ddf831c53a9f4ea199a2cdad5d1",tooltip="does the required aciton on button clicks"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="LevelScreen::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_level_screen.html#aa1c5ae2e5452dec4c1bdf9b5bfb2e213",tooltip="updates all the elements in the screen"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="WinScreen::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_win_screen.html#a15b72b3c199e9755b787d0e24c6529fe",tooltip=" "];
+}

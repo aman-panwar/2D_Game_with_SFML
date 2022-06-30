@@ -1,0 +1,185 @@
+\hypertarget{class_game_data}{}\doxysection{Game\+Data Class Reference}
+\label{class_game_data}\index{GameData@{GameData}}
+
+
+This is a singleton class which hold encapsulates the main renderwindow the player info, the instructions for navigation, resources.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Data.\+h$>$}
+
+
+
+Collaboration diagram for Game\+Data\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{class_game_data_a2a2c636747caa2c026c6cc6c125daef3}{get\+Window}} ()
+\item 
+bool \mbox{\hyperlink{class_game_data_ae29d362597aded7edc5b1db66c1991a9}{set\+Window}} (sf\+::\+Render\+Window $\ast$Window)
+\item 
+bool \mbox{\hyperlink{class_game_data_a15000782055f66033d323a1b14e39515}{is\+Sound\+On}} ()
+\item 
+void \mbox{\hyperlink{class_game_data_a8121db36f72c6be351a86f831821c094}{set\+Sound\+State}} (bool Sound\+State)
+\item 
+\mbox{\Hypertarget{class_game_data_a4ac592da3a25283b89f055fa1cf18939}\label{class_game_data_a4ac592da3a25283b89f055fa1cf18939}} 
+Planc\+Style \mbox{\hyperlink{class_game_data_a4ac592da3a25283b89f055fa1cf18939}{get\+Planc\+Style}} ()
+\begin{DoxyCompactList}\small\item\em returns the planc style \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_a2d7ebf99220e48ce10dd80b00f1b979b}\label{class_game_data_a2d7ebf99220e48ce10dd80b00f1b979b}} 
+void \mbox{\hyperlink{class_game_data_a2d7ebf99220e48ce10dd80b00f1b979b}{set\+Planc\+Style}} (Planc\+Style new\+Planc)
+\begin{DoxyCompactList}\small\item\em saves the planc style \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_a5469013be8977d1c36079da730e684b0}\label{class_game_data_a5469013be8977d1c36079da730e684b0}} 
+\mbox{\hyperlink{class_player}{Player}} \& \mbox{\hyperlink{class_game_data_a5469013be8977d1c36079da730e684b0}{get\+Cur\+Player}} ()
+\begin{DoxyCompactList}\small\item\em return refrence to the player \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_aaef0a965456eba1a468ec9bc052fd104}\label{class_game_data_aaef0a965456eba1a468ec9bc052fd104}} 
+void \mbox{\hyperlink{class_game_data_aaef0a965456eba1a468ec9bc052fd104}{set\+Level\+Info}} (std\+::list$<$ \mbox{\hyperlink{class_block}{Block}} $>$)
+\begin{DoxyCompactList}\small\item\em save the level info \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_a15d3b617c411d273457277c9f7fd4124}\label{class_game_data_a15d3b617c411d273457277c9f7fd4124}} 
+std\+::list$<$ \mbox{\hyperlink{class_block}{Block}} $>$ \mbox{\hyperlink{class_game_data_a15d3b617c411d273457277c9f7fd4124}{get\+Level\+Info}} ()
+\begin{DoxyCompactList}\small\item\em returns the level info \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_afaea27e4f7d638539fc5ee2c63c7b342}\label{class_game_data_afaea27e4f7d638539fc5ee2c63c7b342}} 
+void {\bfseries set\+Level\+Index} (unsigned index)
+\item 
+\mbox{\Hypertarget{class_game_data_a680f88b289f28a151f0b8d5c7cc97261}\label{class_game_data_a680f88b289f28a151f0b8d5c7cc97261}} 
+unsigned {\bfseries get\+Level\+Index} ()
+\item 
+\mbox{\Hypertarget{class_game_data_aafa40769ac0ee9033da0ceeee26a9a8f}\label{class_game_data_aafa40769ac0ee9033da0ceeee26a9a8f}} 
+void {\bfseries set\+Infinity\+Mode\+Difficulty} (unsigned)
+\item 
+\mbox{\Hypertarget{class_game_data_a990038661afb241d01f8747af8952a00}\label{class_game_data_a990038661afb241d01f8747af8952a00}} 
+unsigned {\bfseries get\+Infinity\+Mode\+Difficulty} ()
+\item 
+\mbox{\Hypertarget{class_game_data_a4b6780e3bbd59e076a894d917812a148}\label{class_game_data_a4b6780e3bbd59e076a894d917812a148}} 
+\mbox{\hyperlink{class_resource_holder}{Texture\+Holder}} \& \mbox{\hyperlink{class_game_data_a4b6780e3bbd59e076a894d917812a148}{get\+Texture\+Holder}} ()
+\begin{DoxyCompactList}\small\item\em return reference to main texture holder \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_a86525ab4b9c6790d4628d3215e42074d}\label{class_game_data_a86525ab4b9c6790d4628d3215e42074d}} 
+\mbox{\hyperlink{class_resource_holder}{Font\+Holder}} \& \mbox{\hyperlink{class_game_data_a86525ab4b9c6790d4628d3215e42074d}{get\+Font\+Holder}} ()
+\begin{DoxyCompactList}\small\item\em return reference to main font holder \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_a556087c3297a5c9c901621ba19547c11}\label{class_game_data_a556087c3297a5c9c901621ba19547c11}} 
+\mbox{\hyperlink{class_resource_holder}{Sound\+Holder}} \& \mbox{\hyperlink{class_game_data_a556087c3297a5c9c901621ba19547c11}{get\+Sound\+Holder}} ()
+\begin{DoxyCompactList}\small\item\em return reference to main sound holder \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_af0b43a54eeff5707ab684ad6f437554f}\label{class_game_data_af0b43a54eeff5707ab684ad6f437554f}} 
+\mbox{\hyperlink{class_resource_holder}{Music\+Holder}} \& \mbox{\hyperlink{class_game_data_af0b43a54eeff5707ab684ad6f437554f}{get\+Music\+Holder}} ()
+\begin{DoxyCompactList}\small\item\em return reference to main music holder \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_a1be09723bee1a69232bb402f35737b60}\label{class_game_data_a1be09723bee1a69232bb402f35737b60}} 
+bool {\bfseries is\+Standard\+Play} ()
+\item 
+\mbox{\Hypertarget{class_game_data_ac712ca46244ccbc67ca09c99c6b59135}\label{class_game_data_ac712ca46244ccbc67ca09c99c6b59135}} 
+void {\bfseries set\+If\+Standard\+Play} (bool)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_data_a1c005a17bf3b625ab8000dc1496b1827}\label{class_game_data_a1c005a17bf3b625ab8000dc1496b1827}} 
+static \mbox{\hyperlink{class_game_data}{Game\+Data}} $\ast$ \mbox{\hyperlink{class_game_data_a1c005a17bf3b625ab8000dc1496b1827}{Get\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Return the pointer to the class object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_data_abfba9185bc8bca67a21061d6f4c09362}\label{class_game_data_abfba9185bc8bca67a21061d6f4c09362}} 
+{\bfseries Game\+Data} (\mbox{\hyperlink{class_game_data}{Game\+Data}} const \&)
+\item 
+\mbox{\Hypertarget{class_game_data_af68a0e80d4eaf087f85c41731aec3713}\label{class_game_data_af68a0e80d4eaf087f85c41731aec3713}} 
+\mbox{\hyperlink{class_game_data}{Game\+Data}} \& {\bfseries operator=} (\mbox{\hyperlink{class_game_data}{Game\+Data}} const \&)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_data_a0e1c4d2f3f4cac081976251a5937301f}\label{class_game_data_a0e1c4d2f3f4cac081976251a5937301f}} 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{class_game_data_a0e1c4d2f3f4cac081976251a5937301f}{window}}
+\begin{DoxyCompactList}\small\item\em pointer ot the single instance \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_a104e9e274c692caa294e351c3778d9d4}\label{class_game_data_a104e9e274c692caa294e351c3778d9d4}} 
+bool \mbox{\hyperlink{class_game_data_a104e9e274c692caa294e351c3778d9d4}{Cur\+Sound\+State}}
+\begin{DoxyCompactList}\small\item\em Stores the pointer to the game window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_ae2d56452b437a23923994f93c28a6c81}\label{class_game_data_ae2d56452b437a23923994f93c28a6c81}} 
+Planc\+Style \mbox{\hyperlink{class_game_data_ae2d56452b437a23923994f93c28a6c81}{plancstyle}}
+\begin{DoxyCompactList}\small\item\em saves if game sounds are on or off \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_aa1f09a1fc995315758af514fefd46ce0}\label{class_game_data_aa1f09a1fc995315758af514fefd46ce0}} 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_game_data_aa1f09a1fc995315758af514fefd46ce0}{cur\+Player}}
+\begin{DoxyCompactList}\small\item\em saves the plac style \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_a0108178bcc8128a3517256331c8e4e3d}\label{class_game_data_a0108178bcc8128a3517256331c8e4e3d}} 
+unsigned \mbox{\hyperlink{class_game_data_a0108178bcc8128a3517256331c8e4e3d}{level\+\_\+index}} = 0
+\begin{DoxyCompactList}\small\item\em the the player info \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_afd440ee4066db9e8dc3ab19dbc3dca7a}\label{class_game_data_afd440ee4066db9e8dc3ab19dbc3dca7a}} 
+unsigned {\bfseries difficulty} = 0
+\item 
+\mbox{\Hypertarget{class_game_data_a2ea40e8f5be2309293fef4952e580a3b}\label{class_game_data_a2ea40e8f5be2309293fef4952e580a3b}} 
+bool {\bfseries isstanadardplay} = true
+\item 
+\mbox{\Hypertarget{class_game_data_ae4a607ac3962b515c580cb2ddd37a446}\label{class_game_data_ae4a607ac3962b515c580cb2ddd37a446}} 
+std\+::list$<$ \mbox{\hyperlink{class_block}{Block}} $>$ {\bfseries level\+\_\+info}
+\item 
+\mbox{\Hypertarget{class_game_data_a0528c3066787379e082e514f5d3b25aa}\label{class_game_data_a0528c3066787379e082e514f5d3b25aa}} 
+\mbox{\hyperlink{class_resource_holder}{Texture\+Holder}} \mbox{\hyperlink{class_game_data_a0528c3066787379e082e514f5d3b25aa}{Textures}}
+\begin{DoxyCompactList}\small\item\em saves the level info \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_a4d502c87c2a6cf0d4517a086c4e16d4a}\label{class_game_data_a4d502c87c2a6cf0d4517a086c4e16d4a}} 
+\mbox{\hyperlink{class_resource_holder}{Font\+Holder}} \mbox{\hyperlink{class_game_data_a4d502c87c2a6cf0d4517a086c4e16d4a}{Fonts}}
+\begin{DoxyCompactList}\small\item\em saves the textures \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_a355546b9b79db307d7d8daf253abbe29}\label{class_game_data_a355546b9b79db307d7d8daf253abbe29}} 
+\mbox{\hyperlink{class_resource_holder}{Sound\+Holder}} \mbox{\hyperlink{class_game_data_a355546b9b79db307d7d8daf253abbe29}{Sounds}}
+\begin{DoxyCompactList}\small\item\em saves the fonts \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_data_ac6a68a93034b7453ed29bb01cbda59b7}\label{class_game_data_ac6a68a93034b7453ed29bb01cbda59b7}} 
+\mbox{\hyperlink{class_resource_holder}{Music\+Holder}} \mbox{\hyperlink{class_game_data_ac6a68a93034b7453ed29bb01cbda59b7}{Musics}}
+\begin{DoxyCompactList}\small\item\em saves the sounds \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_data_a427da37c232f337d939214162d16d1c8}\label{class_game_data_a427da37c232f337d939214162d16d1c8}} 
+static \mbox{\hyperlink{class_game_data}{Game\+Data}} $\ast$ {\bfseries instance} = NULL
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a singleton class which hold encapsulates the main renderwindow the player info, the instructions for navigation, resources. 
+
+This class provides a convinient way to pass around the necessary information easily between the Screens of the \mbox{\hyperlink{class_game}{Game}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_data_a2a2c636747caa2c026c6cc6c125daef3}\label{class_game_data_a2a2c636747caa2c026c6cc6c125daef3}} 
+\index{GameData@{GameData}!getWindow@{getWindow}}
+\index{getWindow@{getWindow}!GameData@{GameData}}
+\doxysubsubsection{\texorpdfstring{getWindow()}{getWindow()}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window $\ast$ Game\+Data\+::get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The pointer to the window set by \mbox{\hyperlink{class_game_data_ae29d362597aded7edc5b1db66c1991a9}{set\+Window()}} 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_game_data_ae29d362597aded7edc5b1db66c1991a9}{set\+Window()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_game_data_a15000782055f66033d323a1b14e39515}\label{class_game_data_a15000782055f66033d323a1b14e39515}} 
+\index{GameData@{GameData}!isSoundOn@{isSoundOn}}
+\index{isSoundOn@{isSoundOn}!GameData@{GameData}}
+\doxysubsubsection{\texorpdfstring{isSoundOn()}{isSoundOn()}}
+{\footnotesize\ttfamily bool Game\+Data\+::is\+Sound\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns is Sound is on or off \mbox{\Hypertarget{class_game_data_a8121db36f72c6be351a86f831821c094}\label{class_game_data_a8121db36f72c6be351a86f831821c094}} 
+\index{GameData@{GameData}!setSoundState@{setSoundState}}
+\index{setSoundState@{setSoundState}!GameData@{GameData}}
+\doxysubsubsection{\texorpdfstring{setSoundState()}{setSoundState()}}
+{\footnotesize\ttfamily void Game\+Data\+::set\+Sound\+State (\begin{DoxyParamCaption}\item[{bool}]{Sound\+State }\end{DoxyParamCaption})}
+
+sets if sound is on of off Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{class_game_data_ae29d362597aded7edc5b1db66c1991a9}\label{class_game_data_ae29d362597aded7edc5b1db66c1991a9}} 
+\index{GameData@{GameData}!setWindow@{setWindow}}
+\index{setWindow@{setWindow}!GameData@{GameData}}
+\doxysubsubsection{\texorpdfstring{setWindow()}{setWindow()}}
+{\footnotesize\ttfamily bool Game\+Data\+::set\+Window (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{Window }\end{DoxyParamCaption})}
+
+stores the sf\+::\+Render\+Window of the game but only once, once it is stored it does not update the window 
+\begin{DoxyParams}{Parameters}
+{\em Window} & the pointer to game window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the pointer to the render window was changed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Game\+Data.\+h\item 
+src/Game\+Data.\+cpp\end{DoxyCompactItemize}

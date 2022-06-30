@@ -1,0 +1,184 @@
+\hypertarget{class_level_screen}{}\doxysection{Level\+Screen Class Reference}
+\label{class_level_screen}\index{LevelScreen@{LevelScreen}}
+
+
+this screen displays the diffirent levels available to play  
+
+
+
+
+{\ttfamily \#include $<$Level\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Level\+Screen\+:
+% FIG 0
+
+
+Collaboration diagram for Level\+Screen\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_level_screen_aa1c5ae2e5452dec4c1bdf9b5bfb2e213}\label{class_level_screen_aa1c5ae2e5452dec4c1bdf9b5bfb2e213}} 
+void \mbox{\hyperlink{class_level_screen_aa1c5ae2e5452dec4c1bdf9b5bfb2e213}{update}} (sf\+::\+Time delta\+Time)
+\begin{DoxyCompactList}\small\item\em updates all the elements in the screen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_screen_a896a073bcd9a4d9686d49b4d0014ff12}\label{class_level_screen_a896a073bcd9a4d9686d49b4d0014ff12}} 
+void \mbox{\hyperlink{class_level_screen_a896a073bcd9a4d9686d49b4d0014ff12}{render}} ()
+\begin{DoxyCompactList}\small\item\em renders all the elements on in the screen \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_level_screen_aa4c2231a1b9e3904b7782bfb5e49fced}{init\+Background}} ()
+\begin{DoxyCompactList}\small\item\em inititalise the background \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_level_screen_a3d3eac914a9c90c3149647609c69cd70}{handle\+Input}} (sf\+::\+Keyboard\+::\+Key key, bool is\+Pressed)
+\item 
+\mbox{\Hypertarget{class_level_screen_a0005ba63b279268a18d005295ca2e227}\label{class_level_screen_a0005ba63b279268a18d005295ca2e227}} 
+void \mbox{\hyperlink{class_level_screen_a0005ba63b279268a18d005295ca2e227}{init\+Buttons}} ()
+\begin{DoxyCompactList}\small\item\em initialises the buttons \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_screen_ad310fb5618c4aaba81120d58a8ea5a29}\label{class_level_screen_ad310fb5618c4aaba81120d58a8ea5a29}} 
+void \mbox{\hyperlink{class_level_screen_ad310fb5618c4aaba81120d58a8ea5a29}{render\+Buttons}} ()
+\begin{DoxyCompactList}\small\item\em renders the button \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_screen_a603547a70688d91fee59b513f03d46c8}\label{class_level_screen_a603547a70688d91fee59b513f03d46c8}} 
+void \mbox{\hyperlink{class_level_screen_a603547a70688d91fee59b513f03d46c8}{update\+Buttons}} ()
+\begin{DoxyCompactList}\small\item\em updates the buttons \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_screen_afcc71ddf831c53a9f4ea199a2cdad5d1}\label{class_level_screen_afcc71ddf831c53a9f4ea199a2cdad5d1}} 
+void \mbox{\hyperlink{class_level_screen_afcc71ddf831c53a9f4ea199a2cdad5d1}{manage\+Button\+Click}} ()
+\begin{DoxyCompactList}\small\item\em does the required aciton on button clicks \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_screen_abd2b8088355d189e5b4203657c614bd0}\label{class_level_screen_abd2b8088355d189e5b4203657c614bd0}} 
+void \mbox{\hyperlink{class_level_screen_abd2b8088355d189e5b4203657c614bd0}{update\+Page\+Button\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em activates or deactivates the textures for nextpage and prev page buttons \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_level_screen_a6e78167a7ba3fa716a1823043edaf458}\label{class_level_screen_a6e78167a7ba3fa716a1823043edaf458}} 
+sf\+::\+Rectangle\+Shape {\bfseries Boundary\+Box}
+\item 
+\mbox{\Hypertarget{class_level_screen_a606a5f710727e5a871f13ba9ee6ed9c1}\label{class_level_screen_a606a5f710727e5a871f13ba9ee6ed9c1}} 
+sf\+::\+Rectangle\+Shape \mbox{\hyperlink{class_level_screen_a606a5f710727e5a871f13ba9ee6ed9c1}{Header\+Box}}
+\begin{DoxyCompactList}\small\item\em boundary for the screen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_screen_a21cfbf0bed6f674fbfdddc5ef289eff1}\label{class_level_screen_a21cfbf0bed6f674fbfdddc5ef289eff1}} 
+sf\+::\+Sprite \mbox{\hyperlink{class_level_screen_a21cfbf0bed6f674fbfdddc5ef289eff1}{Background}}
+\begin{DoxyCompactList}\small\item\em banner for header of the screen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_screen_a27a595de551a1520bcc2293285d38d51}\label{class_level_screen_a27a595de551a1520bcc2293285d38d51}} 
+sf\+::\+Text \mbox{\hyperlink{class_level_screen_a27a595de551a1520bcc2293285d38d51}{Header}}
+\begin{DoxyCompactList}\small\item\em background \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_screen_ac22f5d353871b5fa00edf8d889a80380}\label{class_level_screen_ac22f5d353871b5fa00edf8d889a80380}} 
+unsigned \mbox{\hyperlink{class_level_screen_ac22f5d353871b5fa00edf8d889a80380}{cur\+\_\+page\+\_\+number}} = 1
+\begin{DoxyCompactList}\small\item\em header text \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_screen_a0f40d55669cc5185c81d42c74bf62997}\label{class_level_screen_a0f40d55669cc5185c81d42c74bf62997}} 
+unsigned \mbox{\hyperlink{class_level_screen_a0f40d55669cc5185c81d42c74bf62997}{max\+\_\+page\+\_\+number}} = 1
+\begin{DoxyCompactList}\small\item\em cur page \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_button}{Sprite\+Button}} \mbox{\hyperlink{class_level_screen_aa9b7235041f7ae6393fe0809bdc7157e}{Close\+Button}}
+\begin{DoxyCompactList}\small\item\em total number of pages \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_button}{Sprite\+Button}} \mbox{\hyperlink{class_level_screen_ad8008829df9c69dd99607f968a57d6bd}{Next\+Page\+Button}}
+\begin{DoxyCompactList}\small\item\em shows us the next set of levels \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_button}{Sprite\+Button}} \mbox{\hyperlink{class_level_screen_a60f7aecfbca2ba9703db65c418dced11}{Prev\+Page\+Button}}
+\begin{DoxyCompactList}\small\item\em shows us the prev set of levels \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_screen_a3fe4d8ebcdaad4d7c0a3946e342db4b0}\label{class_level_screen_a3fe4d8ebcdaad4d7c0a3946e342db4b0}} 
+std\+::vector$<$ \mbox{\hyperlink{class_text_button}{Text\+Button}} $>$ {\bfseries level\+Buttons}
+\item 
+\mbox{\Hypertarget{class_level_screen_a15cf30f75df8bf39a73fce5a590462eb}\label{class_level_screen_a15cf30f75df8bf39a73fce5a590462eb}} 
+std\+::vector$<$ \mbox{\hyperlink{class_sprite_button}{Sprite\+Button}} $>$ \mbox{\hyperlink{class_level_screen_a15cf30f75df8bf39a73fce5a590462eb}{delete\+Buttons}}
+\begin{DoxyCompactList}\small\item\em level butttons \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+this screen displays the diffirent levels available to play 
+
+generates the various level buttons, when the button is pressed it loads the corresponding level data and takes us to standard play screen 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_level_screen_a3d3eac914a9c90c3149647609c69cd70}\label{class_level_screen_a3d3eac914a9c90c3149647609c69cd70}} 
+\index{LevelScreen@{LevelScreen}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!LevelScreen@{LevelScreen}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily void Level\+Screen\+::handle\+Input (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key,  }\item[{bool}]{is\+Pressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+manages what to do with the events 
+\begin{DoxyParams}{Parameters}
+{\em key} & the key whose state changes \\
+\hline
+{\em is\+Pressed} & is the key was pressed or not i.\+e released \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_screen_a0bd97acb0f2a115eee6f988fc78f7c55}{Game\+Screen}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_level_screen_aa4c2231a1b9e3904b7782bfb5e49fced}\label{class_level_screen_aa4c2231a1b9e3904b7782bfb5e49fced}} 
+\index{LevelScreen@{LevelScreen}!initBackground@{initBackground}}
+\index{initBackground@{initBackground}!LevelScreen@{LevelScreen}}
+\doxysubsubsection{\texorpdfstring{initBackground()}{initBackground()}}
+{\footnotesize\ttfamily void Level\+Screen\+::init\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+inititalise the background 
+
+delete buttons 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_level_screen_aa9b7235041f7ae6393fe0809bdc7157e}\label{class_level_screen_aa9b7235041f7ae6393fe0809bdc7157e}} 
+\index{LevelScreen@{LevelScreen}!CloseButton@{CloseButton}}
+\index{CloseButton@{CloseButton}!LevelScreen@{LevelScreen}}
+\doxysubsubsection{\texorpdfstring{CloseButton}{CloseButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_button}{Sprite\+Button}} Level\+Screen\+::\+Close\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_sprite_button}{SpriteButton}}(gameData-\/>getTextureHolder().get(TextureID::CloseButton),}
+\DoxyCodeLine{                                            sf::Vector2f(125.f, 125.f),}
+\DoxyCodeLine{                                            35.f,}
+\DoxyCodeLine{                                            35.f)}
+
+\end{DoxyCode}
+
+
+total number of pages 
+
+takes us back to main menu \mbox{\Hypertarget{class_level_screen_ad8008829df9c69dd99607f968a57d6bd}\label{class_level_screen_ad8008829df9c69dd99607f968a57d6bd}} 
+\index{LevelScreen@{LevelScreen}!NextPageButton@{NextPageButton}}
+\index{NextPageButton@{NextPageButton}!LevelScreen@{LevelScreen}}
+\doxysubsubsection{\texorpdfstring{NextPageButton}{NextPageButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_button}{Sprite\+Button}} Level\+Screen\+::\+Next\+Page\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_sprite_button}{SpriteButton}}(gameData-\/>getTextureHolder().get(TextureID::PageButton),}
+\DoxyCodeLine{                                               sf::Vector2f(gameData-\/>getWindow()-\/>getSize().x -\/ 125.f, 125.f),}
+\DoxyCodeLine{                                               35.f,}
+\DoxyCodeLine{                                               35.f)}
+
+\end{DoxyCode}
+
+
+shows us the next set of levels 
+
+\mbox{\Hypertarget{class_level_screen_a60f7aecfbca2ba9703db65c418dced11}\label{class_level_screen_a60f7aecfbca2ba9703db65c418dced11}} 
+\index{LevelScreen@{LevelScreen}!PrevPageButton@{PrevPageButton}}
+\index{PrevPageButton@{PrevPageButton}!LevelScreen@{LevelScreen}}
+\doxysubsubsection{\texorpdfstring{PrevPageButton}{PrevPageButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_button}{Sprite\+Button}} Level\+Screen\+::\+Prev\+Page\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_sprite_button}{SpriteButton}}(gameData-\/>getTextureHolder().get(TextureID::PageButtonDeactivated),}
+\DoxyCodeLine{                                               sf::Vector2f(gameData-\/>getWindow()-\/>getSize().x -\/ 125.f -\/ 45.f, 125.f),}
+\DoxyCodeLine{                                               35.f,}
+\DoxyCodeLine{                                               35.f)}
+
+\end{DoxyCode}
+
+
+shows us the prev set of levels 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/screens/Level\+Screen.\+h\item 
+src/\+Screens/Level\+Screen.\+cpp\end{DoxyCompactItemize}

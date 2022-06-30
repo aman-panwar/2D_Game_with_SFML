@@ -1,0 +1,126 @@
+\hypertarget{class_infinity_win_screen}{}\doxysection{Infinity\+Win\+Screen Class Reference}
+\label{class_infinity_win_screen}\index{InfinityWinScreen@{InfinityWinScreen}}
+
+
+Class for creating win screen for infinity play.  
+
+
+
+
+{\ttfamily \#include $<$Infinity\+Win\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Infinity\+Win\+Screen\+:
+% FIG 0
+
+
+Collaboration diagram for Infinity\+Win\+Screen\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_infinity_win_screen_aaff6d27f7826e17603181358cc5bc9ac}{update}} (sf\+::\+Time deltatime)
+\item 
+void \mbox{\hyperlink{class_infinity_win_screen_a72957113c0c2cb97ead7a858ff318111}{handle\+Input}} (sf\+::\+Keyboard\+::\+Key key, bool is\+Pressed)
+\item 
+\mbox{\Hypertarget{class_infinity_win_screen_a1cb4fcd54dce1061e12bfa8799d42f75}\label{class_infinity_win_screen_a1cb4fcd54dce1061e12bfa8799d42f75}} 
+void \mbox{\hyperlink{class_infinity_win_screen_a1cb4fcd54dce1061e12bfa8799d42f75}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renders the screen onto the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries Continue\+Button}
+\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries Home\+Button}
+\item 
+\mbox{\Hypertarget{class_infinity_win_screen_a0063e8f6ee1133f8d10490d8962c57cd}\label{class_infinity_win_screen_a0063e8f6ee1133f8d10490d8962c57cd}} 
+sf\+::\+Sprite {\bfseries Background}
+\item 
+\mbox{\Hypertarget{class_infinity_win_screen_aacaca5f604d8db36873633763438cc30}\label{class_infinity_win_screen_aacaca5f604d8db36873633763438cc30}} 
+sf\+::\+Rectangle\+Shape {\bfseries Container}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class for creating win screen for infinity play. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_infinity_win_screen_a72957113c0c2cb97ead7a858ff318111}\label{class_infinity_win_screen_a72957113c0c2cb97ead7a858ff318111}} 
+\index{InfinityWinScreen@{InfinityWinScreen}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!InfinityWinScreen@{InfinityWinScreen}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily void Infinity\+Win\+Screen\+::handle\+Input (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key,  }\item[{bool}]{is\+Pressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+handles keyboard events(if escape is pressed)
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em is\+Pressed} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_screen_a0bd97acb0f2a115eee6f988fc78f7c55}{Game\+Screen}}.
+
+\mbox{\Hypertarget{class_infinity_win_screen_aaff6d27f7826e17603181358cc5bc9ac}\label{class_infinity_win_screen_aaff6d27f7826e17603181358cc5bc9ac}} 
+\index{InfinityWinScreen@{InfinityWinScreen}!update@{update}}
+\index{update@{update}!InfinityWinScreen@{InfinityWinScreen}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Infinity\+Win\+Screen\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{deltatime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+updates buttons based on mouse position
+
+
+\begin{DoxyParams}{Parameters}
+{\em deltatime} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_screen_a5d3298b6f70f9c6fedaf489ab42f47fb}{Game\+Screen}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_infinity_win_screen_af9e6958f5ba5730707fccff5ef2685a9}\label{class_infinity_win_screen_af9e6958f5ba5730707fccff5ef2685a9}} 
+\index{InfinityWinScreen@{InfinityWinScreen}!ContinueButton@{ContinueButton}}
+\index{ContinueButton@{ContinueButton}!InfinityWinScreen@{InfinityWinScreen}}
+\doxysubsubsection{\texorpdfstring{ContinueButton}{ContinueButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Infinity\+Win\+Screen\+::\+Continue\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(\textcolor{stringliteral}{"{}CONTINUE"{}},}
+\DoxyCodeLine{                                      sf::Vector2f(gameData-\/>getWindow()-\/>getSize().x / 2 -\/ QUITSCREEN\_BUTTON\_WIDTH / 2.0 -\/ QUITSCREEN\_MARGIN / 2.0,}
+\DoxyCodeLine{                                                   gameData-\/>getWindow()-\/>getSize().y / 2),}
+\DoxyCodeLine{                                      QUITSCREEN\_BUTTON\_WIDTH,}
+\DoxyCodeLine{                                      QUITSCREEN\_BUTTON\_HEIGHT)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infinity_win_screen_a2ba5a2bf91c836256600483c15f53f6d}\label{class_infinity_win_screen_a2ba5a2bf91c836256600483c15f53f6d}} 
+\index{InfinityWinScreen@{InfinityWinScreen}!HomeButton@{HomeButton}}
+\index{HomeButton@{HomeButton}!InfinityWinScreen@{InfinityWinScreen}}
+\doxysubsubsection{\texorpdfstring{HomeButton}{HomeButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Infinity\+Win\+Screen\+::\+Home\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(\textcolor{stringliteral}{"{}HOME"{}},}
+\DoxyCodeLine{                                     sf::Vector2f(gameData-\/>getWindow()-\/>getSize().x / 2 + QUITSCREEN\_BUTTON\_WIDTH / 2.0 + QUITSCREEN\_MARGIN / 2.0,}
+\DoxyCodeLine{                                                  gameData-\/>getWindow()-\/>getSize().y / 2),}
+\DoxyCodeLine{                                     QUITSCREEN\_BUTTON\_WIDTH,}
+\DoxyCodeLine{                                     QUITSCREEN\_BUTTON\_HEIGHT)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/screens/Infinity\+Win\+Screen.\+h\item 
+src/\+Screens/Infinity\+Win\+Screen.\+cpp\end{DoxyCompactItemize}

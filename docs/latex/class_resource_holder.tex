@@ -1,0 +1,70 @@
+\hypertarget{class_resource_holder}{}\doxysection{Resource\+Holder$<$ Resource\+Type, Resource\+ID $>$ Class Template Reference}
+\label{class_resource_holder}\index{ResourceHolder$<$ ResourceType, ResourceID $>$@{ResourceHolder$<$ ResourceType, ResourceID $>$}}
+
+
+Encapsulates and Holds the Resources.  
+
+
+
+
+{\ttfamily \#include $<$resourceholder.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_resource_holder_a5e97003070e0ec8944c1e27273e65235}{load}} (const Resource\+ID, const std\+::string)
+\item 
+Resource\+Type \& \mbox{\hyperlink{class_resource_holder_ad842fb7067234d3b7e2ca49f47166aee}{get}} (Resource\+ID)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_resource_holder_a5c6f6747068e7642c1963fdaad458c14}\label{class_resource_holder_a5c6f6747068e7642c1963fdaad458c14}} 
+std\+::map$<$ Resource\+ID, std\+::unique\+\_\+ptr$<$ Resource\+Type $>$ $>$ \mbox{\hyperlink{class_resource_holder_a5c6f6747068e7642c1963fdaad458c14}{Resource\+Map}}
+\begin{DoxyCompactList}\small\item\em holds the key and resource \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Resource\+Type, typename Resource\+ID$>$\newline
+class Resource\+Holder$<$ Resource\+Type, Resource\+ID $>$}
+
+Encapsulates and Holds the Resources. 
+
+Stores the resource into Resource\+Map with Resource\+ID as the key \begin{DoxyNote}{Note}
+typedefs are available for all valid use case of \mbox{\hyperlink{class_resource_holder}{Resource\+Holder}} 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_holder_ad842fb7067234d3b7e2ca49f47166aee}\label{class_resource_holder_ad842fb7067234d3b7e2ca49f47166aee}} 
+\index{ResourceHolder$<$ ResourceType, ResourceID $>$@{ResourceHolder$<$ ResourceType, ResourceID $>$}!get@{get}}
+\index{get@{get}!ResourceHolder$<$ ResourceType, ResourceID $>$@{ResourceHolder$<$ ResourceType, ResourceID $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename Resource\+Type , typename Resource\+ID $>$ \\
+Resource\+Type \& \mbox{\hyperlink{class_resource_holder}{Resource\+Holder}}$<$ Resource\+Type, Resource\+ID $>$\+::get (\begin{DoxyParamCaption}\item[{Resource\+ID}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the resource 
+\begin{DoxyParams}{Parameters}
+{\em id} & is the key value of the resource to be returned \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_resource_holder_a5e97003070e0ec8944c1e27273e65235}\label{class_resource_holder_a5e97003070e0ec8944c1e27273e65235}} 
+\index{ResourceHolder$<$ ResourceType, ResourceID $>$@{ResourceHolder$<$ ResourceType, ResourceID $>$}!load@{load}}
+\index{load@{load}!ResourceHolder$<$ ResourceType, ResourceID $>$@{ResourceHolder$<$ ResourceType, ResourceID $>$}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily template$<$typename Resource\+Type , typename Resource\+ID $>$ \\
+void \mbox{\hyperlink{class_resource_holder}{Resource\+Holder}}$<$ Resource\+Type, Resource\+ID $>$\+::load (\begin{DoxyParamCaption}\item[{const Resource\+ID}]{id,  }\item[{const std\+::string}]{file\+Location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Loads the resource into Resource\+Map 
+\begin{DoxyParams}{Parameters}
+{\em id} & is the key value \\
+\hline
+{\em file\+Location} & is the location of the asset \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/resourceholder.\+hpp\item 
+include/resourceholder.\+inl\end{DoxyCompactItemize}

@@ -1,0 +1,274 @@
+\hypertarget{class_custom_level_screen}{}\doxysection{Custom\+Level\+Screen Class Reference}
+\label{class_custom_level_screen}\index{CustomLevelScreen@{CustomLevelScreen}}
+
+
+class for custom level designeer screen  
+
+
+
+
+{\ttfamily \#include $<$Custom\+Level\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Custom\+Level\+Screen\+:
+% FIG 0
+
+
+Collaboration diagram for Custom\+Level\+Screen\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_custom_level_screen_a8c284c4a05647b3ea5f259ec780ecdd1}{update}} (sf\+::\+Time deltatime)
+\item 
+void \mbox{\hyperlink{class_custom_level_screen_aeb40af0d3d183c9b3d53076fb7f3176b}{handle\+Input}} (sf\+::\+Keyboard\+::\+Key key, bool is\+Pressed)
+\item 
+void \mbox{\hyperlink{class_custom_level_screen_a33dc9898d51b0ab395320aec465aa691}{render}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_custom_level_screen_a7bce4169f27eb53560a97d80db535977}{update\+Buttons}} ()
+\item 
+void \mbox{\hyperlink{class_custom_level_screen_aff52f789ebff274b4e58fb1350da41a0}{update\+Block\+Placement}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries Save\+Button}
+\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries Quit\+Button}
+\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries Block\+Button1}
+\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries Block\+Button2}
+\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries Block\+Button3}
+\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries Block\+Button4}
+\item 
+\mbox{\Hypertarget{class_custom_level_screen_a059e31543c962dfe053300080c501550}\label{class_custom_level_screen_a059e31543c962dfe053300080c501550}} 
+sf\+::\+Sound {\bfseries Fail\+Sound}
+\item 
+\mbox{\Hypertarget{class_custom_level_screen_aa6cafc6dc098dffd29c156d561d5cf5e}\label{class_custom_level_screen_aa6cafc6dc098dffd29c156d561d5cf5e}} 
+sf\+::\+Sound {\bfseries Pass\+Sound}
+\item 
+\mbox{\Hypertarget{class_custom_level_screen_a6c7568bb29e125245f02dbf0e94d3b53}\label{class_custom_level_screen_a6c7568bb29e125245f02dbf0e94d3b53}} 
+std\+::list$<$ \mbox{\hyperlink{class_block}{Block}} $>$ {\bfseries placed\+\_\+blocks}
+\item 
+\mbox{\Hypertarget{class_custom_level_screen_afafb3891fed7adba1b32afe83f29fd13}\label{class_custom_level_screen_afafb3891fed7adba1b32afe83f29fd13}} 
+sf\+::\+Rectangle\+Shape \mbox{\hyperlink{class_custom_level_screen_afafb3891fed7adba1b32afe83f29fd13}{cur\+\_\+block\+\_\+shape}}
+\begin{DoxyCompactList}\small\item\em holds list of blocks created up till the moment \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_custom_level_screen_afa4ac4fefedba42f221c516451c2c011}\label{class_custom_level_screen_afa4ac4fefedba42f221c516451c2c011}} 
+bool \mbox{\hyperlink{class_custom_level_screen_afa4ac4fefedba42f221c516451c2c011}{first\+\_\+placed}} = false
+\begin{DoxyCompactList}\small\item\em holds block shape \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_custom_level_screen_a38c584da0f2da0cdfcbcb559e6a939f5}\label{class_custom_level_screen_a38c584da0f2da0cdfcbcb559e6a939f5}} 
+unsigned {\bfseries cur\+\_\+block} = 0
+\item 
+\mbox{\Hypertarget{class_custom_level_screen_add8ce18f057dd063cbdbd07a03471ad4}\label{class_custom_level_screen_add8ce18f057dd063cbdbd07a03471ad4}} 
+sf\+::\+Vector2f {\bfseries pos1}
+\item 
+\mbox{\Hypertarget{class_custom_level_screen_aa8c49e38e86cfc70ef616f2d1c1e4ba1}\label{class_custom_level_screen_aa8c49e38e86cfc70ef616f2d1c1e4ba1}} 
+sf\+::\+Vector2f {\bfseries pos2}
+\item 
+\mbox{\Hypertarget{class_custom_level_screen_ae8e1bcb8a4236824b3f6a4ca0a792570}\label{class_custom_level_screen_ae8e1bcb8a4236824b3f6a4ca0a792570}} 
+sf\+::\+Float\+Rect {\bfseries Valid\+Area}
+\item 
+\mbox{\Hypertarget{class_custom_level_screen_ad522bf1c4dbda3fcc0d3981ffdc5a4a5}\label{class_custom_level_screen_ad522bf1c4dbda3fcc0d3981ffdc5a4a5}} 
+sf\+::\+Rectangle\+Shape {\bfseries Planc\+Area}
+\item 
+\mbox{\Hypertarget{class_custom_level_screen_adef5aaf3625acc1df9843d403761a3c0}\label{class_custom_level_screen_adef5aaf3625acc1df9843d403761a3c0}} 
+sf\+::\+Sprite {\bfseries Upper\+Wall}
+\item 
+\mbox{\Hypertarget{class_custom_level_screen_a2d302fdc4d48cebfe3f53623342e8719}\label{class_custom_level_screen_a2d302fdc4d48cebfe3f53623342e8719}} 
+sf\+::\+Sprite {\bfseries Left\+Wall}
+\item 
+\mbox{\Hypertarget{class_custom_level_screen_a6e7697870001900de8b01b6c29e064aa}\label{class_custom_level_screen_a6e7697870001900de8b01b6c29e064aa}} 
+sf\+::\+Sprite {\bfseries Right\+Wall}
+\item 
+\mbox{\Hypertarget{class_custom_level_screen_ac09dbfef1e4b787ba76d43b41da96352}\label{class_custom_level_screen_ac09dbfef1e4b787ba76d43b41da96352}} 
+sf\+::\+Sprite {\bfseries Background}
+\item 
+\mbox{\Hypertarget{class_custom_level_screen_aa993a2d90b4f74bd0b7b2aeef32845ee}\label{class_custom_level_screen_aa993a2d90b4f74bd0b7b2aeef32845ee}} 
+sf\+::\+Rectangle\+Shape {\bfseries Container}
+\item 
+\mbox{\Hypertarget{class_custom_level_screen_a5e03cd87f0ab36bddc5d1cf24077a983}\label{class_custom_level_screen_a5e03cd87f0ab36bddc5d1cf24077a983}} 
+sf\+::\+Text {\bfseries Text}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+class for custom level designeer screen 
+
+This class allows us to make the levels as we wanted 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_custom_level_screen_aeb40af0d3d183c9b3d53076fb7f3176b}\label{class_custom_level_screen_aeb40af0d3d183c9b3d53076fb7f3176b}} 
+\index{CustomLevelScreen@{CustomLevelScreen}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!CustomLevelScreen@{CustomLevelScreen}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily void Custom\+Level\+Screen\+::handle\+Input (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key,  }\item[{bool}]{is\+Pressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+handle quitting by pressing esc
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em is\+Pressed} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_screen_a0bd97acb0f2a115eee6f988fc78f7c55}{Game\+Screen}}.
+
+\mbox{\Hypertarget{class_custom_level_screen_a33dc9898d51b0ab395320aec465aa691}\label{class_custom_level_screen_a33dc9898d51b0ab395320aec465aa691}} 
+\index{CustomLevelScreen@{CustomLevelScreen}!render@{render}}
+\index{render@{render}!CustomLevelScreen@{CustomLevelScreen}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Custom\+Level\+Screen\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+renders every thing to be displayed 
+
+Implements \mbox{\hyperlink{class_game_screen_aa6db40bc72a0566084e056b66a07c93d}{Game\+Screen}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_custom_level_screen_a8c284c4a05647b3ea5f259ec780ecdd1}\label{class_custom_level_screen_a8c284c4a05647b3ea5f259ec780ecdd1}} 
+\index{CustomLevelScreen@{CustomLevelScreen}!update@{update}}
+\index{update@{update}!CustomLevelScreen@{CustomLevelScreen}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Custom\+Level\+Screen\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{deltatime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+updates all placed blocks, buttons, background and borders
+
+
+\begin{DoxyParams}{Parameters}
+{\em deltatime} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_screen_a5d3298b6f70f9c6fedaf489ab42f47fb}{Game\+Screen}}.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{class_custom_level_screen_aff52f789ebff274b4e58fb1350da41a0}\label{class_custom_level_screen_aff52f789ebff274b4e58fb1350da41a0}} 
+\index{CustomLevelScreen@{CustomLevelScreen}!updateBlockPlacement@{updateBlockPlacement}}
+\index{updateBlockPlacement@{updateBlockPlacement}!CustomLevelScreen@{CustomLevelScreen}}
+\doxysubsubsection{\texorpdfstring{updateBlockPlacement()}{updateBlockPlacement()}}
+{\footnotesize\ttfamily void Custom\+Level\+Screen\+::update\+Block\+Placement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+update the block\textquotesingle{}s place Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{class_custom_level_screen_a7bce4169f27eb53560a97d80db535977}\label{class_custom_level_screen_a7bce4169f27eb53560a97d80db535977}} 
+\index{CustomLevelScreen@{CustomLevelScreen}!updateButtons@{updateButtons}}
+\index{updateButtons@{updateButtons}!CustomLevelScreen@{CustomLevelScreen}}
+\doxysubsubsection{\texorpdfstring{updateButtons()}{updateButtons()}}
+{\footnotesize\ttfamily void Custom\+Level\+Screen\+::update\+Buttons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+updates all buttons Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_custom_level_screen_a5ef36c8381aa9636759f30d33b5ff68d}\label{class_custom_level_screen_a5ef36c8381aa9636759f30d33b5ff68d}} 
+\index{CustomLevelScreen@{CustomLevelScreen}!BlockButton1@{BlockButton1}}
+\index{BlockButton1@{BlockButton1}!CustomLevelScreen@{CustomLevelScreen}}
+\doxysubsubsection{\texorpdfstring{BlockButton1}{BlockButton1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Custom\+Level\+Screen\+::\+Block\+Button1\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(\textcolor{stringliteral}{"{}Block 1"{}},}
+\DoxyCodeLine{                                         sf::Vector2f(CUSTOMLEVEL\_BUTTON\_WIDTH / 2.0 + 10,}
+\DoxyCodeLine{                                                      5 * CUSTOMLEVEL\_BUTTON\_HEIGHT / 2.0 + 30),}
+\DoxyCodeLine{                                         CUSTOMLEVEL\_BUTTON\_WIDTH,}
+\DoxyCodeLine{                                         CUSTOMLEVEL\_BUTTON\_HEIGHT)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_custom_level_screen_a6ea33eccb54f8fa31df0a42756db001f}\label{class_custom_level_screen_a6ea33eccb54f8fa31df0a42756db001f}} 
+\index{CustomLevelScreen@{CustomLevelScreen}!BlockButton2@{BlockButton2}}
+\index{BlockButton2@{BlockButton2}!CustomLevelScreen@{CustomLevelScreen}}
+\doxysubsubsection{\texorpdfstring{BlockButton2}{BlockButton2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Custom\+Level\+Screen\+::\+Block\+Button2\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(\textcolor{stringliteral}{"{}Block 2"{}},}
+\DoxyCodeLine{                                         sf::Vector2f(CUSTOMLEVEL\_BUTTON\_WIDTH / 2.0 + 10,}
+\DoxyCodeLine{                                                      7 * CUSTOMLEVEL\_BUTTON\_HEIGHT / 2.0 + 40),}
+\DoxyCodeLine{                                         CUSTOMLEVEL\_BUTTON\_WIDTH,}
+\DoxyCodeLine{                                         CUSTOMLEVEL\_BUTTON\_HEIGHT)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_custom_level_screen_a0ddba60342176d50ca88d8a26f45eeb4}\label{class_custom_level_screen_a0ddba60342176d50ca88d8a26f45eeb4}} 
+\index{CustomLevelScreen@{CustomLevelScreen}!BlockButton3@{BlockButton3}}
+\index{BlockButton3@{BlockButton3}!CustomLevelScreen@{CustomLevelScreen}}
+\doxysubsubsection{\texorpdfstring{BlockButton3}{BlockButton3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Custom\+Level\+Screen\+::\+Block\+Button3\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(\textcolor{stringliteral}{"{}Block 3"{}},}
+\DoxyCodeLine{                                         sf::Vector2f(CUSTOMLEVEL\_BUTTON\_WIDTH / 2.0 + 10,}
+\DoxyCodeLine{                                                      9 * CUSTOMLEVEL\_BUTTON\_HEIGHT / 2.0 + 50),}
+\DoxyCodeLine{                                         CUSTOMLEVEL\_BUTTON\_WIDTH,}
+\DoxyCodeLine{                                         CUSTOMLEVEL\_BUTTON\_HEIGHT)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_custom_level_screen_ab16ca814cbae13b766658ec129daf58e}\label{class_custom_level_screen_ab16ca814cbae13b766658ec129daf58e}} 
+\index{CustomLevelScreen@{CustomLevelScreen}!BlockButton4@{BlockButton4}}
+\index{BlockButton4@{BlockButton4}!CustomLevelScreen@{CustomLevelScreen}}
+\doxysubsubsection{\texorpdfstring{BlockButton4}{BlockButton4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Custom\+Level\+Screen\+::\+Block\+Button4\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(\textcolor{stringliteral}{"{}Block 4"{}},}
+\DoxyCodeLine{                                         sf::Vector2f(CUSTOMLEVEL\_BUTTON\_WIDTH / 2.0 + 10,}
+\DoxyCodeLine{                                                      11 * CUSTOMLEVEL\_BUTTON\_HEIGHT / 2.0 + 60),}
+\DoxyCodeLine{                                         CUSTOMLEVEL\_BUTTON\_WIDTH,}
+\DoxyCodeLine{                                         CUSTOMLEVEL\_BUTTON\_HEIGHT)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_custom_level_screen_a0ec1cd131a200f7b4e412081088481dc}\label{class_custom_level_screen_a0ec1cd131a200f7b4e412081088481dc}} 
+\index{CustomLevelScreen@{CustomLevelScreen}!QuitButton@{QuitButton}}
+\index{QuitButton@{QuitButton}!CustomLevelScreen@{CustomLevelScreen}}
+\doxysubsubsection{\texorpdfstring{QuitButton}{QuitButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Custom\+Level\+Screen\+::\+Quit\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(\textcolor{stringliteral}{"{}QUIT"{}},}
+\DoxyCodeLine{                                       sf::Vector2f(CUSTOMLEVEL\_BUTTON\_WIDTH / 2.0 + 10,}
+\DoxyCodeLine{                                                    3 * CUSTOMLEVEL\_BUTTON\_HEIGHT / 2.0 + 20),}
+\DoxyCodeLine{                                       CUSTOMLEVEL\_BUTTON\_WIDTH,}
+\DoxyCodeLine{                                       CUSTOMLEVEL\_BUTTON\_HEIGHT)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_custom_level_screen_a638c465c7672022ac02749ccff2d4747}\label{class_custom_level_screen_a638c465c7672022ac02749ccff2d4747}} 
+\index{CustomLevelScreen@{CustomLevelScreen}!SaveButton@{SaveButton}}
+\index{SaveButton@{SaveButton}!CustomLevelScreen@{CustomLevelScreen}}
+\doxysubsubsection{\texorpdfstring{SaveButton}{SaveButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Custom\+Level\+Screen\+::\+Save\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(\textcolor{stringliteral}{"{}SAVE"{}},}
+\DoxyCodeLine{                                       sf::Vector2f(CUSTOMLEVEL\_BUTTON\_WIDTH / 2.0 + 10,}
+\DoxyCodeLine{                                                    CUSTOMLEVEL\_BUTTON\_HEIGHT / 2.0 + 10),}
+\DoxyCodeLine{                                       CUSTOMLEVEL\_BUTTON\_WIDTH,}
+\DoxyCodeLine{                                       CUSTOMLEVEL\_BUTTON\_HEIGHT)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/screens/Custom\+Level\+Screen.\+h\item 
+src/\+Screens/Custom\+Level\+Screen.\+cpp\end{DoxyCompactItemize}

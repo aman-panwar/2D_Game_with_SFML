@@ -1,0 +1,198 @@
+\hypertarget{class_main_menu_screen}{}\doxysection{Main\+Menu\+Screen Class Reference}
+\label{class_main_menu_screen}\index{MainMenuScreen@{MainMenuScreen}}
+
+
+Screen for the Main Menu of the \mbox{\hyperlink{class_game}{Game}}.  
+
+
+
+
+{\ttfamily \#include $<$Main\+Menu\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Menu\+Screen\+:
+% FIG 0
+
+
+Collaboration diagram for Main\+Menu\+Screen\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_menu_screen_af4d22a618029ec11277886737c360896}\label{class_main_menu_screen_af4d22a618029ec11277886737c360896}} 
+void \mbox{\hyperlink{class_main_menu_screen_af4d22a618029ec11277886737c360896}{update}} (sf\+::\+Time delta\+Time)
+\begin{DoxyCompactList}\small\item\em Makes the changes required on the main screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_menu_screen_ab3d57dc21d763299c747670c334a4151}\label{class_main_menu_screen_ab3d57dc21d763299c747670c334a4151}} 
+void \mbox{\hyperlink{class_main_menu_screen_ab3d57dc21d763299c747670c334a4151}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renders the Screen onto the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_menu_screen_ab380121784f84f35d660a306dadc0e89}{handle\+Input}} (sf\+::\+Keyboard\+::\+Key key, bool is\+Pressed)
+\item 
+\mbox{\Hypertarget{class_main_menu_screen_a98dafb236117e978f0d6009a4a0b7e39}\label{class_main_menu_screen_a98dafb236117e978f0d6009a4a0b7e39}} 
+void \mbox{\hyperlink{class_main_menu_screen_a98dafb236117e978f0d6009a4a0b7e39}{update\+Buttons}} ()
+\begin{DoxyCompactList}\small\item\em update all the button on the screen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_menu_screen_ad06b529ea21c0b1add4d168e4d96d9ef}\label{class_main_menu_screen_ad06b529ea21c0b1add4d168e4d96d9ef}} 
+void \mbox{\hyperlink{class_main_menu_screen_ad06b529ea21c0b1add4d168e4d96d9ef}{init\+Logo}} ()
+\begin{DoxyCompactList}\small\item\em initialises the logo \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_menu_screen_a5f0d820f4021b551ba26a3be5332ef37}\label{class_main_menu_screen_a5f0d820f4021b551ba26a3be5332ef37}} 
+void \mbox{\hyperlink{class_main_menu_screen_a5f0d820f4021b551ba26a3be5332ef37}{init\+Background}} ()
+\begin{DoxyCompactList}\small\item\em initialises the backround \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_menu_screen_a19d7b88df5be6fdd3a507e270d760b27}\label{class_main_menu_screen_a19d7b88df5be6fdd3a507e270d760b27}} 
+void \mbox{\hyperlink{class_main_menu_screen_a19d7b88df5be6fdd3a507e270d760b27}{init\+Text}} ()
+\begin{DoxyCompactList}\small\item\em initialises the text \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_menu_screen_a6d3beed215cf329b7e2509f38ab75335}\label{class_main_menu_screen_a6d3beed215cf329b7e2509f38ab75335}} 
+void \mbox{\hyperlink{class_main_menu_screen_a6d3beed215cf329b7e2509f38ab75335}{render\+Buttons}} ()
+\begin{DoxyCompactList}\small\item\em renders the background onto the screen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_menu_screen_afc84aa320eef319ae47fd04cf04afbaf}\label{class_main_menu_screen_afc84aa320eef319ae47fd04cf04afbaf}} 
+void \mbox{\hyperlink{class_main_menu_screen_afc84aa320eef319ae47fd04cf04afbaf}{render\+Text}} ()
+\begin{DoxyCompactList}\small\item\em renders the text onto the screen \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_menu_screen_a2a545861e7616ed589550dfbc9182f78}\label{class_main_menu_screen_a2a545861e7616ed589550dfbc9182f78}} 
+sf\+::\+Sprite {\bfseries Logo}
+\item 
+\mbox{\Hypertarget{class_main_menu_screen_a4f8142ce20e931fb68d650259f4b8497}\label{class_main_menu_screen_a4f8142ce20e931fb68d650259f4b8497}} 
+sf\+::\+Sprite \mbox{\hyperlink{class_main_menu_screen_a4f8142ce20e931fb68d650259f4b8497}{Background}}
+\begin{DoxyCompactList}\small\item\em The logo of the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_menu_screen_acce74a4500a936ce7b2929f57c93adeb}\label{class_main_menu_screen_acce74a4500a936ce7b2929f57c93adeb}} 
+\mbox{\hyperlink{class_leaderboard}{Leaderboard}} \mbox{\hyperlink{class_main_menu_screen_acce74a4500a936ce7b2929f57c93adeb}{leaderboard}} = \mbox{\hyperlink{class_leaderboard}{Leaderboard}}(sf\+::\+Vector2f(960.f, 540.f))
+\begin{DoxyCompactList}\small\item\em the backgrounf for the screen \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} \mbox{\hyperlink{class_main_menu_screen_ac9db968a16632b76dde83694cb6e59a8}{Play\+Button}}
+\begin{DoxyCompactList}\small\item\em the leaderboard of the \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries Custom\+Level\+Button}
+\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries Infinity\+Play\+Button}
+\item 
+\mbox{\hyperlink{class_sprite_button}{Sprite\+Button}} \mbox{\hyperlink{class_main_menu_screen_a67957e8e8127e64ac53551be346a157d}{Sound\+Button}}
+\begin{DoxyCompactList}\small\item\em the sound on/off button \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_button}{Sprite\+Button}} \mbox{\hyperlink{class_main_menu_screen_aabae81510189bba51675ef85116e081f}{Planc\+Button}}
+\begin{DoxyCompactList}\small\item\em selects the planc style \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_menu_screen_ae345b13a4926b89607e1b686934d09f1}\label{class_main_menu_screen_ae345b13a4926b89607e1b686934d09f1}} 
+\mbox{\hyperlink{class_textbox}{Textbox}} \mbox{\hyperlink{class_main_menu_screen_ae345b13a4926b89607e1b686934d09f1}{User\+Name\+Textbox}} = \mbox{\hyperlink{class_textbox}{Textbox}}(sf\+::\+Vector2f(960.f, 1000.f), 320.f, \char`\"{}Unknown\char`\"{})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_textbox}{Textbox}} to input the username. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_menu_screen_aa4de471df8a462c3929b5c05d333016d}\label{class_main_menu_screen_aa4de471df8a462c3929b5c05d333016d}} 
+sf\+::\+Text \mbox{\hyperlink{class_main_menu_screen_aa4de471df8a462c3929b5c05d333016d}{Planc\+Button\+Text}}
+\begin{DoxyCompactList}\small\item\em text to mention planc button \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Screen for the Main Menu of the \mbox{\hyperlink{class_game}{Game}}. 
+
+has the various components of the game like the username textbox, play button, sound on/off button, leaderboard, etc 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_menu_screen_ab380121784f84f35d660a306dadc0e89}\label{class_main_menu_screen_ab380121784f84f35d660a306dadc0e89}} 
+\index{MainMenuScreen@{MainMenuScreen}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!MainMenuScreen@{MainMenuScreen}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily void Main\+Menu\+Screen\+::handle\+Input (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key,  }\item[{bool}]{is\+Pressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+manages what to do with the events 
+\begin{DoxyParams}{Parameters}
+{\em key} & the key whose state changes \\
+\hline
+{\em is\+Pressed} & is the key was pressed or not i.\+e released \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_screen_a0bd97acb0f2a115eee6f988fc78f7c55}{Game\+Screen}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_main_menu_screen_aab83bc4acd20f626cc686ef5deda65bc}\label{class_main_menu_screen_aab83bc4acd20f626cc686ef5deda65bc}} 
+\index{MainMenuScreen@{MainMenuScreen}!CustomLevelButton@{CustomLevelButton}}
+\index{CustomLevelButton@{CustomLevelButton}!MainMenuScreen@{MainMenuScreen}}
+\doxysubsubsection{\texorpdfstring{CustomLevelButton}{CustomLevelButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Main\+Menu\+Screen\+::\+Custom\+Level\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(std::string(\textcolor{stringliteral}{"{}NEW LEVEL"{}}),}
+\DoxyCodeLine{                                       sf::Vector2f(1260.f, 800.f),}
+\DoxyCodeLine{                                       200.f,}
+\DoxyCodeLine{                                       80.f)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_main_menu_screen_a5fcda84163aa0a0fc1dd66eb6abe9038}\label{class_main_menu_screen_a5fcda84163aa0a0fc1dd66eb6abe9038}} 
+\index{MainMenuScreen@{MainMenuScreen}!InfinityPlayButton@{InfinityPlayButton}}
+\index{InfinityPlayButton@{InfinityPlayButton}!MainMenuScreen@{MainMenuScreen}}
+\doxysubsubsection{\texorpdfstring{InfinityPlayButton}{InfinityPlayButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Main\+Menu\+Screen\+::\+Infinity\+Play\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(std::string(\textcolor{stringliteral}{"{}ENDLESS PLAY"{}}),}
+\DoxyCodeLine{                                       sf::Vector2f(660.f, 800.f),}
+\DoxyCodeLine{                                       200.f,}
+\DoxyCodeLine{                                       80.f)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_main_menu_screen_aabae81510189bba51675ef85116e081f}\label{class_main_menu_screen_aabae81510189bba51675ef85116e081f}} 
+\index{MainMenuScreen@{MainMenuScreen}!PlancButton@{PlancButton}}
+\index{PlancButton@{PlancButton}!MainMenuScreen@{MainMenuScreen}}
+\doxysubsubsection{\texorpdfstring{PlancButton}{PlancButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_button}{Sprite\+Button}} Main\+Menu\+Screen\+::\+Planc\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_sprite_button}{SpriteButton}}(gameData-\/>getTextureHolder().get(TextureID::Planc1),}
+\DoxyCodeLine{                                            sf::Vector2f(960.f, 900.f),}
+\DoxyCodeLine{                                            320.f,}
+\DoxyCodeLine{                                            40.f)}
+
+\end{DoxyCode}
+
+
+selects the planc style 
+
+\mbox{\Hypertarget{class_main_menu_screen_ac9db968a16632b76dde83694cb6e59a8}\label{class_main_menu_screen_ac9db968a16632b76dde83694cb6e59a8}} 
+\index{MainMenuScreen@{MainMenuScreen}!PlayButton@{PlayButton}}
+\index{PlayButton@{PlayButton}!MainMenuScreen@{MainMenuScreen}}
+\doxysubsubsection{\texorpdfstring{PlayButton}{PlayButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Main\+Menu\+Screen\+::\+Play\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(std::string(\textcolor{stringliteral}{"{}PLAY"{}}),}
+\DoxyCodeLine{                                       sf::Vector2f(960.f, 800.f),}
+\DoxyCodeLine{                                       200.f,}
+\DoxyCodeLine{                                       80.f)}
+
+\end{DoxyCode}
+
+
+the leaderboard of the 
+
+the play button , takes to level selector screen \mbox{\Hypertarget{class_main_menu_screen_a67957e8e8127e64ac53551be346a157d}\label{class_main_menu_screen_a67957e8e8127e64ac53551be346a157d}} 
+\index{MainMenuScreen@{MainMenuScreen}!SoundButton@{SoundButton}}
+\index{SoundButton@{SoundButton}!MainMenuScreen@{MainMenuScreen}}
+\doxysubsubsection{\texorpdfstring{SoundButton}{SoundButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_button}{Sprite\+Button}} Main\+Menu\+Screen\+::\+Sound\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_sprite_button}{SpriteButton}}(gameData-\/>getTextureHolder().get(TextureID::SoundOn),}
+\DoxyCodeLine{                                            sf::Vector2f(1560.f, 800.f),}
+\DoxyCodeLine{                                            80.f,}
+\DoxyCodeLine{                                            80.f)}
+
+\end{DoxyCode}
+
+
+the sound on/off button 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/screens/Main\+Menu\+Screen.\+h\item 
+src/\+Screens/Main\+Menu\+Screen.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,89 @@
+\hypertarget{class_textbox}{}\doxysection{Textbox Class Reference}
+\label{class_textbox}\index{Textbox@{Textbox}}
+
+
+class for textbox  
+
+
+
+
+{\ttfamily \#include $<$textbox.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_textbox_afff24ef273c89fa6ca85424eb5a7219f}{Textbox}} (sf\+::\+Vector2f centre\+Pos, float width, std\+::string init\+Text)
+\item 
+void \mbox{\hyperlink{class_textbox_a19d857250f197dabd77f939939636b65}{handle\+Input}} (sf\+::\+Keyboard\+::\+Key key, bool is\+Pressed)
+\item 
+\mbox{\Hypertarget{class_textbox_a67d287987ccce2ec07343a194ca89763}\label{class_textbox_a67d287987ccce2ec07343a194ca89763}} 
+void \mbox{\hyperlink{class_textbox_a67d287987ccce2ec07343a194ca89763}{update}} ()
+\begin{DoxyCompactList}\small\item\em updates the textbox \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_textbox_a164e6dfbd1964b36b05de0cf84d07abf}\label{class_textbox_a164e6dfbd1964b36b05de0cf84d07abf}} 
+void \mbox{\hyperlink{class_textbox_a164e6dfbd1964b36b05de0cf84d07abf}{draw}} ()
+\begin{DoxyCompactList}\small\item\em render the textbox \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_textbox_a1ee1f6e4e75afdd89bf8fe05f5c0fc05}\label{class_textbox_a1ee1f6e4e75afdd89bf8fe05f5c0fc05}} 
+sf\+::\+Rectangle\+Shape {\bfseries box}
+\item 
+\mbox{\Hypertarget{class_textbox_aa59335cc36ed8b4a875a3a3d9ebd8f41}\label{class_textbox_aa59335cc36ed8b4a875a3a3d9ebd8f41}} 
+sf\+::\+Text {\bfseries my\+Text}
+\item 
+\mbox{\Hypertarget{class_textbox_a791f54c55e981be4c235b284f55a81df}\label{class_textbox_a791f54c55e981be4c235b284f55a81df}} 
+sf\+::\+Sound {\bfseries error\+Type\+Sound}
+\item 
+\mbox{\Hypertarget{class_textbox_a71c234536b7aaa9a63674a8a51145c19}\label{class_textbox_a71c234536b7aaa9a63674a8a51145c19}} 
+sf\+::\+Sound {\bfseries type\+Sound}
+\item 
+\mbox{\Hypertarget{class_textbox_a0f820c5472d54eec471eda1281a8fe7d}\label{class_textbox_a0f820c5472d54eec471eda1281a8fe7d}} 
+bool {\bfseries is\+Selected} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class for textbox 
+
+creates a textbox which activates when clicked on 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_textbox_afff24ef273c89fa6ca85424eb5a7219f}\label{class_textbox_afff24ef273c89fa6ca85424eb5a7219f}} 
+\index{Textbox@{Textbox}!Textbox@{Textbox}}
+\index{Textbox@{Textbox}!Textbox@{Textbox}}
+\doxysubsubsection{\texorpdfstring{Textbox()}{Textbox()}}
+{\footnotesize\ttfamily Textbox\+::\+Textbox (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{centre\+Pos,  }\item[{float}]{width,  }\item[{std\+::string}]{init\+Text }\end{DoxyParamCaption})}
+
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em center\+Pos} & centre position of the textbox \\
+\hline
+{\em width} & width of the textbox \\
+\hline
+{\em init\+Text} & the default text of the textbox \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_textbox_a19d857250f197dabd77f939939636b65}\label{class_textbox_a19d857250f197dabd77f939939636b65}} 
+\index{Textbox@{Textbox}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!Textbox@{Textbox}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily void Textbox\+::handle\+Input (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key,  }\item[{bool}]{is\+Pressed }\end{DoxyParamCaption})}
+
+takes the input and does the appropriate action 
+\begin{DoxyParams}{Parameters}
+{\em key} & the key whose state changes \\
+\hline
+{\em is\+Pressed} & is the key was pressed or not i.\+e released \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 0
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/textbox.\+h\item 
+src/textbox.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,82 @@
+\hypertarget{class_game_screen}{}\doxysection{Game\+Screen Class Reference}
+\label{class_game_screen}\index{GameScreen@{GameScreen}}
+
+
+It\textquotesingle{}s the base class for all Screen in the \mbox{\hyperlink{class_game}{Game}}.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Game\+Screen\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_screen_a5d3298b6f70f9c6fedaf489ab42f47fb}\label{class_game_screen_a5d3298b6f70f9c6fedaf489ab42f47fb}} 
+virtual void \mbox{\hyperlink{class_game_screen_a5d3298b6f70f9c6fedaf489ab42f47fb}{update}} (sf\+::\+Time delta\+Time)=0
+\begin{DoxyCompactList}\small\item\em Makes the required changes on the screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_screen_aa6db40bc72a0566084e056b66a07c93d}\label{class_game_screen_aa6db40bc72a0566084e056b66a07c93d}} 
+virtual void \mbox{\hyperlink{class_game_screen_aa6db40bc72a0566084e056b66a07c93d}{render}} ()=0
+\begin{DoxyCompactList}\small\item\em Renders the screen onto the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_screen_ae99a7c1fcbceeed2e2b0fd6e8ae0af4d}{process\+Events}} ()
+\item 
+virtual void \mbox{\hyperlink{class_game_screen_a0bd97acb0f2a115eee6f988fc78f7c55}{handle\+Input}} (sf\+::\+Keyboard\+::\+Key key, bool is\+Pressed)=0
+\item 
+\mbox{\Hypertarget{class_game_screen_a1794c01ad1a08d310df5daad197bb059}\label{class_game_screen_a1794c01ad1a08d310df5daad197bb059}} 
+virtual void {\bfseries pause} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_screen_ab9c06f5373c659c350c0a1230cc8a2f5}\label{class_game_screen_ab9c06f5373c659c350c0a1230cc8a2f5}} 
+sf\+::\+Circle\+Shape {\bfseries object}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+It\textquotesingle{}s the base class for all Screen in the \mbox{\hyperlink{class_game}{Game}}. 
+
+Define the basic virtual functions for all the screen 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_screen_a0bd97acb0f2a115eee6f988fc78f7c55}\label{class_game_screen_a0bd97acb0f2a115eee6f988fc78f7c55}} 
+\index{GameScreen@{GameScreen}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!GameScreen@{GameScreen}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily virtual void Game\+Screen\+::handle\+Input (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key,  }\item[{bool}]{is\+Pressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+do necessary work based on key work
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em is\+Pressed} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_win_screen_a18f23dcf0bdf056d38295f15122ca208}{Win\+Screen}}, \mbox{\hyperlink{class_standard_play_screen_a7a3d5c2353bdd13eb041cf44b248f45f}{Standard\+Play\+Screen}}, \mbox{\hyperlink{class_quit_screen_ac5d49a03fbdab6bce811447e818b4666}{Quit\+Screen}}, \mbox{\hyperlink{class_pause_screen_a67eca71b4ef32aa2427a4cc24759d5b2}{Pause\+Screen}}, \mbox{\hyperlink{class_main_menu_screen_ab380121784f84f35d660a306dadc0e89}{Main\+Menu\+Screen}}, \mbox{\hyperlink{class_lost_screen_af755d68e321c8c16e85baeaed9d0b2a1}{Lost\+Screen}}, \mbox{\hyperlink{class_level_screen_a3d3eac914a9c90c3149647609c69cd70}{Level\+Screen}}, \mbox{\hyperlink{class_infinity_win_screen_a72957113c0c2cb97ead7a858ff318111}{Infinity\+Win\+Screen}}, \mbox{\hyperlink{class_infinity_play_screen_a755c9c0491b76bf682ce09518833e04c}{Infinity\+Play\+Screen}}, and \mbox{\hyperlink{class_custom_level_screen_aeb40af0d3d183c9b3d53076fb7f3176b}{Custom\+Level\+Screen}}.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{class_game_screen_ae99a7c1fcbceeed2e2b0fd6e8ae0af4d}\label{class_game_screen_ae99a7c1fcbceeed2e2b0fd6e8ae0af4d}} 
+\index{GameScreen@{GameScreen}!processEvents@{processEvents}}
+\index{processEvents@{processEvents}!GameScreen@{GameScreen}}
+\doxysubsubsection{\texorpdfstring{processEvents()}{processEvents()}}
+{\footnotesize\ttfamily void Game\+Screen\+::process\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+handles events of key pressed or mouse clicked Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/screens/Game\+Screen.\+h\item 
+src/\+Screens/Game\+Screen.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,131 @@
+\hypertarget{class_lost_screen}{}\doxysection{Lost\+Screen Class Reference}
+\label{class_lost_screen}\index{LostScreen@{LostScreen}}
+
+
+Class for creating Lost screen.  
+
+
+
+
+{\ttfamily \#include $<$Lost\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Lost\+Screen\+:
+% FIG 0
+
+
+Collaboration diagram for Lost\+Screen\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lost_screen_aa89aa24f79d1e4114c997587d399321a}{update}} (sf\+::\+Time deltatime)
+\item 
+void \mbox{\hyperlink{class_lost_screen_af755d68e321c8c16e85baeaed9d0b2a1}{handle\+Input}} (sf\+::\+Keyboard\+::\+Key key, bool is\+Pressed)
+\item 
+\mbox{\Hypertarget{class_lost_screen_a7c984e176c4c6abda03d3aee19b87cad}\label{class_lost_screen_a7c984e176c4c6abda03d3aee19b87cad}} 
+void \mbox{\hyperlink{class_lost_screen_a7c984e176c4c6abda03d3aee19b87cad}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renders the screen onto the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries Retry\+Button}
+\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries Home\+Button}
+\item 
+\mbox{\Hypertarget{class_lost_screen_a7b2daf607015ebf9265d6f4df4c4ab9a}\label{class_lost_screen_a7b2daf607015ebf9265d6f4df4c4ab9a}} 
+sf\+::\+Sprite {\bfseries Background}
+\item 
+\mbox{\Hypertarget{class_lost_screen_ab4acc9879350ce799c70290273fc8aca}\label{class_lost_screen_ab4acc9879350ce799c70290273fc8aca}} 
+sf\+::\+Rectangle\+Shape {\bfseries Container}
+\item 
+\mbox{\Hypertarget{class_lost_screen_ad4d6d8fe2637a339a1c174f15989ab4a}\label{class_lost_screen_ad4d6d8fe2637a339a1c174f15989ab4a}} 
+sf\+::\+Text {\bfseries Text}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class for creating Lost screen. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lost_screen_af755d68e321c8c16e85baeaed9d0b2a1}\label{class_lost_screen_af755d68e321c8c16e85baeaed9d0b2a1}} 
+\index{LostScreen@{LostScreen}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!LostScreen@{LostScreen}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily void Lost\+Screen\+::handle\+Input (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key,  }\item[{bool}]{is\+Pressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+handles keyboard events(if spacebar is pressed)
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em is\+Pressed} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_screen_a0bd97acb0f2a115eee6f988fc78f7c55}{Game\+Screen}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_lost_screen_aa89aa24f79d1e4114c997587d399321a}\label{class_lost_screen_aa89aa24f79d1e4114c997587d399321a}} 
+\index{LostScreen@{LostScreen}!update@{update}}
+\index{update@{update}!LostScreen@{LostScreen}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Lost\+Screen\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{deltatime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+updates buttons based on mouse position
+
+
+\begin{DoxyParams}{Parameters}
+{\em deltatime} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_screen_a5d3298b6f70f9c6fedaf489ab42f47fb}{Game\+Screen}}.
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_lost_screen_addeb28bc22b1af14bc4061fabc691835}\label{class_lost_screen_addeb28bc22b1af14bc4061fabc691835}} 
+\index{LostScreen@{LostScreen}!HomeButton@{HomeButton}}
+\index{HomeButton@{HomeButton}!LostScreen@{LostScreen}}
+\doxysubsubsection{\texorpdfstring{HomeButton}{HomeButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Lost\+Screen\+::\+Home\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(\textcolor{stringliteral}{"{}QUIT"{}},}
+\DoxyCodeLine{                                       sf::Vector2f(gameData-\/>getWindow()-\/>getSize().x / 2 + LOSTSCREEN\_BUTTON\_WIDTH / 2.0 + LOSTSCREEN\_MARGIN / 2.0,}
+\DoxyCodeLine{                                                    gameData-\/>getWindow()-\/>getSize().y / 2),}
+\DoxyCodeLine{                                       LOSTSCREEN\_BUTTON\_WIDTH,}
+\DoxyCodeLine{                                       LOSTSCREEN\_BUTTON\_HEIGHT)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_lost_screen_ae9861b6ce637e5cedcead8b367fe87c6}\label{class_lost_screen_ae9861b6ce637e5cedcead8b367fe87c6}} 
+\index{LostScreen@{LostScreen}!RetryButton@{RetryButton}}
+\index{RetryButton@{RetryButton}!LostScreen@{LostScreen}}
+\doxysubsubsection{\texorpdfstring{RetryButton}{RetryButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Lost\+Screen\+::\+Retry\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(\textcolor{stringliteral}{"{}RETRY"{}},}
+\DoxyCodeLine{                                        sf::Vector2f(gameData-\/>getWindow()-\/>getSize().x / 2 -\/ LOSTSCREEN\_BUTTON\_WIDTH / 2.0 -\/ LOSTSCREEN\_MARGIN / 2.0,}
+\DoxyCodeLine{                                                     gameData-\/>getWindow()-\/>getSize().y / 2),}
+\DoxyCodeLine{                                        LOSTSCREEN\_BUTTON\_WIDTH,}
+\DoxyCodeLine{                                        LOSTSCREEN\_BUTTON\_HEIGHT)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/screens/Lost\+Screen.\+h\item 
+src/\+Screens/Lost\+Screen.\+cpp\end{DoxyCompactItemize}

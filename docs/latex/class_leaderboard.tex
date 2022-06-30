@@ -1,0 +1,65 @@
+\hypertarget{class_leaderboard}{}\doxysection{Leaderboard Class Reference}
+\label{class_leaderboard}\index{Leaderboard@{Leaderboard}}
+
+
+Encapsulates the working of leaderboard.  
+
+
+
+
+{\ttfamily \#include $<$leaderboard.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_leaderboard_a1504ddcc13849d80654d9ce7334e28a3}\label{class_leaderboard_a1504ddcc13849d80654d9ce7334e28a3}} 
+\mbox{\hyperlink{class_leaderboard_a1504ddcc13849d80654d9ce7334e28a3}{Leaderboard}} (sf\+::\+Vector2f centre\+Pos)
+\begin{DoxyCompactList}\small\item\em takes the centre postion of the leaderboard \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_leaderboard_ac7e379864f2ca9622bd9be616363adfd}\label{class_leaderboard_ac7e379864f2ca9622bd9be616363adfd}} 
+void \mbox{\hyperlink{class_leaderboard_ac7e379864f2ca9622bd9be616363adfd}{update}} ()
+\begin{DoxyCompactList}\small\item\em updates the leaderboard \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_leaderboard_ad1985f2ad995024f82a6edbe4583ba10}\label{class_leaderboard_ad1985f2ad995024f82a6edbe4583ba10}} 
+void \mbox{\hyperlink{class_leaderboard_ad1985f2ad995024f82a6edbe4583ba10}{draw}} ()
+\begin{DoxyCompactList}\small\item\em renders the leaerboard \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_leaderboard_adcfa6192b3ee90cf5b0616a9a4e9e7c4}\label{class_leaderboard_adcfa6192b3ee90cf5b0616a9a4e9e7c4}} 
+static void \mbox{\hyperlink{class_leaderboard_adcfa6192b3ee90cf5b0616a9a4e9e7c4}{add\+Player}} (std\+::string name, unsigned score)
+\begin{DoxyCompactList}\small\item\em add/updates the name and maxscore of a player to the list \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_leaderboard_a574cac750c7f07d4d4c17ee8122ff0c6}\label{class_leaderboard_a574cac750c7f07d4d4c17ee8122ff0c6}} 
+sf\+::\+Rectangle\+Shape {\bfseries Header\+Body}
+\item 
+\mbox{\Hypertarget{class_leaderboard_aec67bf9a5b87fa8b301b2e6a53fa3a25}\label{class_leaderboard_aec67bf9a5b87fa8b301b2e6a53fa3a25}} 
+sf\+::\+Rectangle\+Shape {\bfseries Main\+Body}
+\item 
+\mbox{\Hypertarget{class_leaderboard_afa7360dfe60a6aa0bfd8eae9d9b8cd5f}\label{class_leaderboard_afa7360dfe60a6aa0bfd8eae9d9b8cd5f}} 
+sf\+::\+Vector2f {\bfseries position}
+\item 
+\mbox{\Hypertarget{class_leaderboard_afcb2fc7c331597ed855c5d0182cbeb3d}\label{class_leaderboard_afcb2fc7c331597ed855c5d0182cbeb3d}} 
+sf\+::\+Text {\bfseries Header\+Text}
+\item 
+\mbox{\Hypertarget{class_leaderboard_a74efe5cada9729f8ff1dd1a69b6b1ef5}\label{class_leaderboard_a74efe5cada9729f8ff1dd1a69b6b1ef5}} 
+std\+::vector$<$ sf\+::\+Text $>$ {\bfseries Leader\+Names}
+\item 
+\mbox{\Hypertarget{class_leaderboard_ade995e771c876a45cb33e88c56cb06c0}\label{class_leaderboard_ade995e771c876a45cb33e88c56cb06c0}} 
+std\+::vector$<$ sf\+::\+Text $>$ {\bfseries Leader\+Scores}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Encapsulates the working of leaderboard. 
+
+The class creates a gui object which shows the leaderboard The class is intended to be used as such\+:
+
+create a object to use it as a gui element
+
+use static function add\+Player(name of the player, score of the player) to add a new player to the list of player or to update the maxscore of an old user 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/leaderboard.\+h\item 
+src/leaderboard.\+cpp\end{DoxyCompactItemize}

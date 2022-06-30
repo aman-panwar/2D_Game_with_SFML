@@ -1,0 +1,112 @@
+\hypertarget{class_button}{}\doxysection{Button Class Reference}
+\label{class_button}\index{Button@{Button}}
+
+
+base class for buttons  
+
+
+
+
+{\ttfamily \#include $<$button.\+h$>$}
+
+
+
+Inheritance diagram for Button\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_button_acd766bf2e64e1aa93ad4c8a16b343347}{is\+Clicked}} ()
+\item 
+virtual void \mbox{\hyperlink{class_button_abc847cb2d0d1491e1899c8fc1cab158a}{update}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_button_ad404f8bf2b6eeb9574485faca3d6abfa}{draw}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_button_a6c3f8065e10bd4340846ed0fffb3ca82}{update\+Click\+State}} (sf\+::\+Float\+Rect box)
+\begin{DoxyCompactList}\small\item\em saves if mouse was pressed over the button \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_button_ae637ace7486dce3996645510a41da138}\label{class_button_ae637ace7486dce3996645510a41da138}} 
+sf\+::\+Sound {\bfseries click\+Sound}
+\item 
+\mbox{\Hypertarget{class_button_aa3ffc9a8f93a1dd5a3e459e14eca1269}\label{class_button_aa3ffc9a8f93a1dd5a3e459e14eca1269}} 
+sf\+::\+Sound \mbox{\hyperlink{class_button_aa3ffc9a8f93a1dd5a3e459e14eca1269}{hover\+Over\+Sound}}
+\begin{DoxyCompactList}\small\item\em plays the click sound for the button \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_button_a29781ab5929318a8a3deeee6c370062a}\label{class_button_a29781ab5929318a8a3deeee6c370062a}} 
+bool \mbox{\hyperlink{class_button_a29781ab5929318a8a3deeee6c370062a}{click\+Sound\+Made}} = false
+\begin{DoxyCompactList}\small\item\em plays the hover sound for the button \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_button_a1c3a54934ab6190a3f4cd31b7302b962}\label{class_button_a1c3a54934ab6190a3f4cd31b7302b962}} 
+bool \mbox{\hyperlink{class_button_a1c3a54934ab6190a3f4cd31b7302b962}{hover\+Sound\+Made}} = false
+\begin{DoxyCompactList}\small\item\em saves if the click sound has been made once or not \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_button_a12951721e031d57faae9cdab7ec2eba1}\label{class_button_a12951721e031d57faae9cdab7ec2eba1}} 
+bool \mbox{\hyperlink{class_button_a12951721e031d57faae9cdab7ec2eba1}{isbutton\+Pressed}} = false
+\begin{DoxyCompactList}\small\item\em saves if the hover sound has been made once or not \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_button_a69f7be156ffd0b1487354ec301b2e36b}\label{class_button_a69f7be156ffd0b1487354ec301b2e36b}} 
+bool \mbox{\hyperlink{class_button_a69f7be156ffd0b1487354ec301b2e36b}{is\+Mouse\+Pressed}} = false
+\begin{DoxyCompactList}\small\item\em saves if the button was pressed \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+base class for buttons 
+
+provides the common functionality for sprite button and text button 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_button_ad404f8bf2b6eeb9574485faca3d6abfa}\label{class_button_ad404f8bf2b6eeb9574485faca3d6abfa}} 
+\index{Button@{Button}!draw@{draw}}
+\index{draw@{draw}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Button\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+renders the button onto the window 
+
+Implemented in \mbox{\hyperlink{class_text_button_ae1501f3daeb3dd40d10070f071a8a73d}{Text\+Button}}, and \mbox{\hyperlink{class_sprite_button_ae562cef52086f3dabe14f09ba19e12af}{Sprite\+Button}}.
+
+\mbox{\Hypertarget{class_button_acd766bf2e64e1aa93ad4c8a16b343347}\label{class_button_acd766bf2e64e1aa93ad4c8a16b343347}} 
+\index{Button@{Button}!isClicked@{isClicked}}
+\index{isClicked@{isClicked}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{isClicked()}{isClicked()}}
+{\footnotesize\ttfamily bool Button\+::is\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+checks is the button was clicked, this also resets the button to unclicked \begin{DoxyReturn}{Returns}
+true if and only if the button was clicked 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{class_button_abc847cb2d0d1491e1899c8fc1cab158a}\label{class_button_abc847cb2d0d1491e1899c8fc1cab158a}} 
+\index{Button@{Button}!update@{update}}
+\index{update@{update}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Button\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+make the changes to the state of button based on mouse position 
+
+Implemented in \mbox{\hyperlink{class_text_button_a401808bb6c1a6e2d0a751121d9cdb218}{Text\+Button}}, and \mbox{\hyperlink{class_sprite_button_a96573bf5d8f43ad114e163e3e61fce4e}{Sprite\+Button}}.
+
+\mbox{\Hypertarget{class_button_a6c3f8065e10bd4340846ed0fffb3ca82}\label{class_button_a6c3f8065e10bd4340846ed0fffb3ca82}} 
+\index{Button@{Button}!updateClickState@{updateClickState}}
+\index{updateClickState@{updateClickState}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{updateClickState()}{updateClickState()}}
+{\footnotesize\ttfamily void Button\+::update\+Click\+State (\begin{DoxyParamCaption}\item[{sf\+::\+Float\+Rect}]{box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+saves if mouse was pressed over the button 
+
+update the button\+Pressed to appropriate value 
+\begin{DoxyParams}{Parameters}
+{\em box} & the gobal bounds of the object \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/buttons/button.\+h\item 
+src/buttons/button.\+cpp\end{DoxyCompactItemize}

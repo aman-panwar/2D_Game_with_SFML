@@ -1,0 +1,103 @@
+\hypertarget{class_file_handler}{}\doxysection{File\+Handler Class Reference}
+\label{class_file_handler}\index{FileHandler@{FileHandler}}
+
+
+Manages the file io for the game.  
+
+
+
+
+{\ttfamily \#include $<$filehandler.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_file_handler_acc489d3d332c35ccb2adf33f41b37cb9}\label{class_file_handler_acc489d3d332c35ccb2adf33f41b37cb9}} 
+static std\+::vector$<$ std\+::pair$<$ std\+::string, unsigned $>$ $>$ \mbox{\hyperlink{class_file_handler_acc489d3d332c35ccb2adf33f41b37cb9}{get\+Player\+Info}} ()
+\begin{DoxyCompactList}\small\item\em return the information saved in the file as a vector of pair containing the name and score \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_file_handler_a5d2d867534a650c5fc7060a7b1b91de3}{save\+Player\+Info}} (std\+::vector$<$ std\+::pair$<$ std\+::string, unsigned $>$$>$)
+\item 
+static std\+::list$<$ \mbox{\hyperlink{class_block}{Block}} $>$ \mbox{\hyperlink{class_file_handler_a6079abe1f1c5077896b8b3c7a33bade8}{get\+Level\+Info}} (unsigned index)
+\item 
+static bool \mbox{\hyperlink{class_file_handler_a3684bcce207f6fd091007fb5fc45c8a7}{delete\+Level\+Info}} (unsigned index)
+\item 
+static void \mbox{\hyperlink{class_file_handler_a50632e81925320c4a1c9819bb4b3279f}{save\+Level\+Info}} (std\+::list$<$ \mbox{\hyperlink{class_block}{Block}} $>$ \&blocks)
+\item 
+static unsigned \mbox{\hyperlink{class_file_handler_a41481fac05262d160998ec10aa34cd9d}{get\+Level\+Count}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the file io for the game. 
+
+Saves and retrieves the information to/from files
+
+The class is intended to be used as such\+:
+
+To retrieve player name and highscore, use get\+Plaer\+Info() To save information pass a vector of pair conating the name and high score to \mbox{\hyperlink{class_file_handler_a5d2d867534a650c5fc7060a7b1b91de3}{save\+Player\+Info()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_file_handler_a3684bcce207f6fd091007fb5fc45c8a7}\label{class_file_handler_a3684bcce207f6fd091007fb5fc45c8a7}} 
+\index{FileHandler@{FileHandler}!deleteLevelInfo@{deleteLevelInfo}}
+\index{deleteLevelInfo@{deleteLevelInfo}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{deleteLevelInfo()}{deleteLevelInfo()}}
+{\footnotesize\ttfamily bool File\+Handler\+::delete\+Level\+Info (\begin{DoxyParamCaption}\item[{unsigned}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+deletes level information from file return the block information 
+\begin{DoxyParams}{Parameters}
+{\em index} & the index of the level to be deleted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if and only if deletion was successful 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{class_file_handler_a41481fac05262d160998ec10aa34cd9d}\label{class_file_handler_a41481fac05262d160998ec10aa34cd9d}} 
+\index{FileHandler@{FileHandler}!getLevelCount@{getLevelCount}}
+\index{getLevelCount@{getLevelCount}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{getLevelCount()}{getLevelCount()}}
+{\footnotesize\ttfamily unsigned File\+Handler\+::get\+Level\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+return the number of levels stored in the file Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{class_file_handler_a6079abe1f1c5077896b8b3c7a33bade8}\label{class_file_handler_a6079abe1f1c5077896b8b3c7a33bade8}} 
+\index{FileHandler@{FileHandler}!getLevelInfo@{getLevelInfo}}
+\index{getLevelInfo@{getLevelInfo}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{getLevelInfo()}{getLevelInfo()}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{class_block}{Block}} $>$ File\+Handler\+::get\+Level\+Info (\begin{DoxyParamCaption}\item[{unsigned}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+retrieves level information from file return the block information 
+\begin{DoxyParams}{Parameters}
+{\em index} & the index of the level to be returned \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_file_handler_a50632e81925320c4a1c9819bb4b3279f}\label{class_file_handler_a50632e81925320c4a1c9819bb4b3279f}} 
+\index{FileHandler@{FileHandler}!saveLevelInfo@{saveLevelInfo}}
+\index{saveLevelInfo@{saveLevelInfo}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{saveLevelInfo()}{saveLevelInfo()}}
+{\footnotesize\ttfamily void File\+Handler\+::save\+Level\+Info (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{class_block}{Block}} $>$ \&}]{blocks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+saves the level information on the file 
+\begin{DoxyParams}{Parameters}
+{\em blocks} & the information of the level \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{class_file_handler_a5d2d867534a650c5fc7060a7b1b91de3}\label{class_file_handler_a5d2d867534a650c5fc7060a7b1b91de3}} 
+\index{FileHandler@{FileHandler}!savePlayerInfo@{savePlayerInfo}}
+\index{savePlayerInfo@{savePlayerInfo}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{savePlayerInfo()}{savePlayerInfo()}}
+{\footnotesize\ttfamily void File\+Handler\+::save\+Player\+Info (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::pair$<$ std\+::string, unsigned $>$$>$}]{player\+\_\+vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+saves the provided information into the file. Takes the input as a vector of pair containing the name and score Here is the caller graph for this function\+:
+% FIG 4
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/filehandler.\+h\item 
+src/filehandler.\+cpp\end{DoxyCompactItemize}

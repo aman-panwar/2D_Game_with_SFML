@@ -1,0 +1,13 @@
+digraph "PauseScreen"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="PauseScreen",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Class for creating pause screen."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="GameScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_screen.html",tooltip="It's the base class for all Screen in the Game."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ContinueButton\nQuitButton" ,fontname="Helvetica"];
+  Node3 [label="TextButton",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_text_button.html",tooltip="class for button that diplays a text"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_button.html",tooltip="base class for buttons"];
+}

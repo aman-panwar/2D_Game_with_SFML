@@ -1,0 +1,129 @@
+\hypertarget{class_player}{}\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+class which holds all the info about the current player  
+
+
+
+
+{\ttfamily \#include $<$player.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_player_ae0766434884f670aea021891e5fe636d}{get\+Alias}} ()
+\item 
+void \mbox{\hyperlink{class_player_ac4514d259f09cda07dd0f184f72aa5f3}{set\+Alias}} (std\+::string new\+Alias)
+\item 
+unsigned \mbox{\hyperlink{class_player_ad28995fdaaa20c4a29071c78f8ca9274}{get\+Cur\+Score}} ()
+\item 
+unsigned \mbox{\hyperlink{class_player_abda04b5b7cf2b5fc39f664fa80f1f225}{get\+Max\+Score}} ()
+\item 
+void \mbox{\hyperlink{class_player_ada5f6e4bee42c9f05c9c6f5aa1f3adfc}{add\+To\+Cur\+Score}} (unsigned score)
+\item 
+void \mbox{\hyperlink{class_player_a077cd27d0005ec86cab71ed3069e5ce3}{add\+To\+Lives}} (int add\+\_\+to\+\_\+lives)
+\item 
+unsigned \mbox{\hyperlink{class_player_a1359eb188b919bb34622454fb637f809}{get\+Lives}} ()
+\item 
+void \mbox{\hyperlink{class_player_a1af5d39f7bac2aeaa1e30c7dda2332fa}{reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_a409bb39d120440edfe6b451d0a87a923}\label{class_player_a409bb39d120440edfe6b451d0a87a923}} 
+std\+::string {\bfseries alias} = \char`\"{}Unknown\char`\"{}
+\item 
+\mbox{\Hypertarget{class_player_a946d88d0f5eb6bece3fd407186b9658c}\label{class_player_a946d88d0f5eb6bece3fd407186b9658c}} 
+unsigned {\bfseries max\+\_\+score} = 0
+\item 
+\mbox{\Hypertarget{class_player_ae1edf8f4ff83e400d5b47a7d91762653}\label{class_player_ae1edf8f4ff83e400d5b47a7d91762653}} 
+unsigned {\bfseries cur\+\_\+score} = 0
+\item 
+\mbox{\Hypertarget{class_player_af21f9d3b115801ee284a9c5e81bd3db5}\label{class_player_af21f9d3b115801ee284a9c5e81bd3db5}} 
+unsigned {\bfseries lives} = DEFAULT\+\_\+\+INITIAL\+\_\+\+LIVES
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class which holds all the info about the current player 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_ada5f6e4bee42c9f05c9c6f5aa1f3adfc}\label{class_player_ada5f6e4bee42c9f05c9c6f5aa1f3adfc}} 
+\index{Player@{Player}!addToCurScore@{addToCurScore}}
+\index{addToCurScore@{addToCurScore}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addToCurScore()}{addToCurScore()}}
+{\footnotesize\ttfamily void Player\+::add\+To\+Cur\+Score (\begin{DoxyParamCaption}\item[{unsigned}]{score }\end{DoxyParamCaption})}
+
+increases the cur\+\_\+score 
+\begin{DoxyParams}{Parameters}
+{\em score} & the value by which the score must be increased \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a077cd27d0005ec86cab71ed3069e5ce3}\label{class_player_a077cd27d0005ec86cab71ed3069e5ce3}} 
+\index{Player@{Player}!addToLives@{addToLives}}
+\index{addToLives@{addToLives}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addToLives()}{addToLives()}}
+{\footnotesize\ttfamily void Player\+::add\+To\+Lives (\begin{DoxyParamCaption}\item[{int}]{add\+\_\+to\+\_\+lives }\end{DoxyParamCaption})}
+
+increases the number of lives. Pass negative value to decrease lives 
+\begin{DoxyParams}{Parameters}
+{\em lives} & no of lices to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_ae0766434884f670aea021891e5fe636d}\label{class_player_ae0766434884f670aea021891e5fe636d}} 
+\index{Player@{Player}!getAlias@{getAlias}}
+\index{getAlias@{getAlias}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getAlias()}{getAlias()}}
+{\footnotesize\ttfamily std\+::string Player\+::get\+Alias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns the alias of the player \begin{DoxyReturn}{Returns}
+alias of the player 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_ad28995fdaaa20c4a29071c78f8ca9274}\label{class_player_ad28995fdaaa20c4a29071c78f8ca9274}} 
+\index{Player@{Player}!getCurScore@{getCurScore}}
+\index{getCurScore@{getCurScore}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getCurScore()}{getCurScore()}}
+{\footnotesize\ttfamily unsigned Player\+::get\+Cur\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns the current score \begin{DoxyReturn}{Returns}
+current score 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a1359eb188b919bb34622454fb637f809}\label{class_player_a1359eb188b919bb34622454fb637f809}} 
+\index{Player@{Player}!getLives@{getLives}}
+\index{getLives@{getLives}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getLives()}{getLives()}}
+{\footnotesize\ttfamily unsigned Player\+::get\+Lives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+return the number of lives \mbox{\Hypertarget{class_player_abda04b5b7cf2b5fc39f664fa80f1f225}\label{class_player_abda04b5b7cf2b5fc39f664fa80f1f225}} 
+\index{Player@{Player}!getMaxScore@{getMaxScore}}
+\index{getMaxScore@{getMaxScore}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getMaxScore()}{getMaxScore()}}
+{\footnotesize\ttfamily unsigned Player\+::get\+Max\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns the max score \begin{DoxyReturn}{Returns}
+max score 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a1af5d39f7bac2aeaa1e30c7dda2332fa}\label{class_player_a1af5d39f7bac2aeaa1e30c7dda2332fa}} 
+\index{Player@{Player}!reset@{reset}}
+\index{reset@{reset}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Player\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+sets the curscore to 0 and lives to their default value \mbox{\Hypertarget{class_player_ac4514d259f09cda07dd0f184f72aa5f3}\label{class_player_ac4514d259f09cda07dd0f184f72aa5f3}} 
+\index{Player@{Player}!setAlias@{setAlias}}
+\index{setAlias@{setAlias}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setAlias()}{setAlias()}}
+{\footnotesize\ttfamily void Player\+::set\+Alias (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+Alias }\end{DoxyParamCaption})}
+
+sets the alias of the player 
+\begin{DoxyParams}{Parameters}
+{\em new\+Alias} & the new alias of the player \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/player.\+h\item 
+src/player.\+cpp\end{DoxyCompactItemize}

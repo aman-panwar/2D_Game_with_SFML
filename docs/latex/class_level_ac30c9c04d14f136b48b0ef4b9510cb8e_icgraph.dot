@@ -1,0 +1,14 @@
+digraph "Level::updateBalls"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Level::updateBalls",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Level::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_level.html#a93cd07946ca9a358fd677265e90fcfce",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="InfinityPlayScreen\l::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_infinity_play_screen.html#a314f9814b54b8755aedac090e26389c6",tooltip="Makes the required changes on the screen."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="StandardPlayScreen\l::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_standard_play_screen.html#ae8d0111c017c2cc958c6ca5fcdd591f6",tooltip=" "];
+}

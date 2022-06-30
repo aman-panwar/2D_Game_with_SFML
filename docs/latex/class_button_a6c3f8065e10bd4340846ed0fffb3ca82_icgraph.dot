@@ -1,0 +1,35 @@
+digraph "Button::updateClickState"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Button::updateClickState",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="saves if mouse was pressed over the button"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="SpriteButton::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sprite_button.html#a96573bf5d8f43ad114e163e3e61fce4e",tooltip="play the approprite sound, changes colour, and changes the clicked state of the button"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="LevelScreen::updateButtons",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_level_screen.html#a603547a70688d91fee59b513f03d46c8",tooltip="updates the buttons"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="LevelScreen::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_level_screen.html#aa1c5ae2e5452dec4c1bdf9b5bfb2e213",tooltip="updates all the elements in the screen"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="MainMenuScreen::updateButtons",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_main_menu_screen.html#a98dafb236117e978f0d6009a4a0b7e39",tooltip="update all the button on the screen"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="MainMenuScreen::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_main_menu_screen.html#af4d22a618029ec11277886737c360896",tooltip="Makes the changes required on the main screen."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="TextButton::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_text_button.html#a401808bb6c1a6e2d0a751121d9cdb218",tooltip="play the approprite sound, changes colour, and changes the clicked state of the button"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="InfinityWinScreen::\lupdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_infinity_win_screen.html#aaff6d27f7826e17603181358cc5bc9ac",tooltip=" "];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="LostScreen::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_lost_screen.html#aa89aa24f79d1e4114c997587d399321a",tooltip=" "];
+  Node7 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="PauseScreen::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pause_screen.html#a02be0814a458d2782380899607e2afe2",tooltip=" "];
+  Node7 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="QuitScreen::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quit_screen.html#a79f30e37d9d22e184629b165f7442c45",tooltip=" "];
+  Node7 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="WinScreen::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_win_screen.html#a15b72b3c199e9755b787d0e24c6529fe",tooltip=" "];
+  Node7 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="CustomLevelScreen::\lupdateButtons",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_level_screen.html#a7bce4169f27eb53560a97d80db535977",tooltip=" "];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="CustomLevelScreen::\lupdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_level_screen.html#a8c284c4a05647b3ea5f259ec780ecdd1",tooltip=" "];
+  Node7 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

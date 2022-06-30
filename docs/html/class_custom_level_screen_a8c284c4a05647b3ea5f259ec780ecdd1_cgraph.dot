@@ -1,0 +1,24 @@
+digraph "CustomLevelScreen::update"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CustomLevelScreen::\lupdate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CustomLevelScreen::\lupdateBlockPlacement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_level_screen.html#aff52f789ebff274b4e58fb1350da41a0",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CustomLevelScreen::\lupdateButtons",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_level_screen.html#a7bce4169f27eb53560a97d80db535977",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ScreenManager::GetManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_screen_manager.html#a7ed4e4407bf8d4518fd21cb8b2638f79",tooltip="lazy initialises the ScreenManager and sets the initial screen of the gmae"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="ScreenManager::goToScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_screen_manager.html#a6c50d7beedf85938140fd2bbfb4efb99",tooltip=" "];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Button::isClicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_button.html#acd766bf2e64e1aa93ad4c8a16b343347",tooltip=" "];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="FileHandler::saveLevelInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_file_handler.html#a50632e81925320c4a1c9819bb4b3279f",tooltip=" "];
+  Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="TextButton::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_text_button.html#a401808bb6c1a6e2d0a751121d9cdb218",tooltip="play the approprite sound, changes colour, and changes the clicked state of the button"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Button::updateClickState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_button.html#a6c3f8065e10bd4340846ed0fffb3ca82",tooltip="saves if mouse was pressed over the button"];
+}

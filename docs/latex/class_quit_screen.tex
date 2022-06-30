@@ -1,0 +1,131 @@
+\hypertarget{class_quit_screen}{}\doxysection{Quit\+Screen Class Reference}
+\label{class_quit_screen}\index{QuitScreen@{QuitScreen}}
+
+
+Class for creating quit screen.  
+
+
+
+
+{\ttfamily \#include $<$Quit\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Quit\+Screen\+:
+% FIG 0
+
+
+Collaboration diagram for Quit\+Screen\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_quit_screen_a79f30e37d9d22e184629b165f7442c45}{update}} (sf\+::\+Time deltatime)
+\item 
+void \mbox{\hyperlink{class_quit_screen_ac5d49a03fbdab6bce811447e818b4666}{handle\+Input}} (sf\+::\+Keyboard\+::\+Key key, bool is\+Pressed)
+\item 
+\mbox{\Hypertarget{class_quit_screen_a9d98074ba6b1c2411cfa16916032799b}\label{class_quit_screen_a9d98074ba6b1c2411cfa16916032799b}} 
+void \mbox{\hyperlink{class_quit_screen_a9d98074ba6b1c2411cfa16916032799b}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renders the screen onto the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries Yes\+Button}
+\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries No\+Button}
+\item 
+\mbox{\Hypertarget{class_quit_screen_a1ac832cf70a01094264fb2db3d299d72}\label{class_quit_screen_a1ac832cf70a01094264fb2db3d299d72}} 
+sf\+::\+Sprite {\bfseries Background}
+\item 
+\mbox{\Hypertarget{class_quit_screen_a5b2c522a083ce8a6c29c907aa33a63b5}\label{class_quit_screen_a5b2c522a083ce8a6c29c907aa33a63b5}} 
+sf\+::\+Rectangle\+Shape {\bfseries Container}
+\item 
+\mbox{\Hypertarget{class_quit_screen_af447d5b5f3e4bfded96c948433ebbbab}\label{class_quit_screen_af447d5b5f3e4bfded96c948433ebbbab}} 
+sf\+::\+Text {\bfseries Text}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class for creating quit screen. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_quit_screen_ac5d49a03fbdab6bce811447e818b4666}\label{class_quit_screen_ac5d49a03fbdab6bce811447e818b4666}} 
+\index{QuitScreen@{QuitScreen}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!QuitScreen@{QuitScreen}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily void Quit\+Screen\+::handle\+Input (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key,  }\item[{bool}]{is\+Pressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+handles keyboard events(if escape is pressed)
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em is\+Pressed} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_screen_a0bd97acb0f2a115eee6f988fc78f7c55}{Game\+Screen}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_quit_screen_a79f30e37d9d22e184629b165f7442c45}\label{class_quit_screen_a79f30e37d9d22e184629b165f7442c45}} 
+\index{QuitScreen@{QuitScreen}!update@{update}}
+\index{update@{update}!QuitScreen@{QuitScreen}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Quit\+Screen\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{deltatime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+updates buttons based on mouse position
+
+
+\begin{DoxyParams}{Parameters}
+{\em deltatime} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_screen_a5d3298b6f70f9c6fedaf489ab42f47fb}{Game\+Screen}}.
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_quit_screen_a9fb5cd032bdba6a8b777a664f193df7c}\label{class_quit_screen_a9fb5cd032bdba6a8b777a664f193df7c}} 
+\index{QuitScreen@{QuitScreen}!NoButton@{NoButton}}
+\index{NoButton@{NoButton}!QuitScreen@{QuitScreen}}
+\doxysubsubsection{\texorpdfstring{NoButton}{NoButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Quit\+Screen\+::\+No\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(\textcolor{stringliteral}{"{}NO"{}},}
+\DoxyCodeLine{                                      sf::Vector2f(gameData-\/>getWindow()-\/>getSize().x / 2 + QUITSCREEN\_BUTTON\_WIDTH/2.0 + QUITSCREEN\_MARGIN / 2.0,}
+\DoxyCodeLine{                                                   gameData-\/>getWindow()-\/>getSize().y / 2),}
+\DoxyCodeLine{                                      QUITSCREEN\_BUTTON\_WIDTH,}
+\DoxyCodeLine{                                      QUITSCREEN\_BUTTON\_HEIGHT)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_quit_screen_a792ae9d1d4655148927890001cfc84e5}\label{class_quit_screen_a792ae9d1d4655148927890001cfc84e5}} 
+\index{QuitScreen@{QuitScreen}!YesButton@{YesButton}}
+\index{YesButton@{YesButton}!QuitScreen@{QuitScreen}}
+\doxysubsubsection{\texorpdfstring{YesButton}{YesButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Quit\+Screen\+::\+Yes\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(\textcolor{stringliteral}{"{}YES"{}},}
+\DoxyCodeLine{                                      sf::Vector2f(gameData-\/>getWindow()-\/>getSize().x / 2 -\/ QUITSCREEN\_BUTTON\_WIDTH/2.0 -\/ QUITSCREEN\_MARGIN / 2.0,}
+\DoxyCodeLine{                                                   gameData-\/>getWindow()-\/>getSize().y / 2),}
+\DoxyCodeLine{                                      QUITSCREEN\_BUTTON\_WIDTH,}
+\DoxyCodeLine{                                      QUITSCREEN\_BUTTON\_HEIGHT)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/screens/Quit\+Screen.\+h\item 
+src/\+Screens/Quit\+Screen.\+cpp\end{DoxyCompactItemize}

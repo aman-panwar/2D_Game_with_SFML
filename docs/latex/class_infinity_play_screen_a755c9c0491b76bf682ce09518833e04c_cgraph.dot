@@ -1,0 +1,14 @@
+digraph "InfinityPlayScreen::handleInput"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="InfinityPlayScreen\l::handleInput",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="ScreenManager::GetManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_screen_manager.html#a7ed4e4407bf8d4518fd21cb8b2638f79",tooltip="lazy initialises the ScreenManager and sets the initial screen of the gmae"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="ScreenManager::goToScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_screen_manager.html#a6c50d7beedf85938140fd2bbfb4efb99",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Level::StartLevel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_level.html#a3fbebdbe8d206602492f486ccbb3ccfe",tooltip=" "];
+}

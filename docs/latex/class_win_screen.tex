@@ -1,0 +1,148 @@
+\hypertarget{class_win_screen}{}\doxysection{Win\+Screen Class Reference}
+\label{class_win_screen}\index{WinScreen@{WinScreen}}
+
+
+class for creating you won screen  
+
+
+
+
+{\ttfamily \#include $<$Win\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Win\+Screen\+:
+% FIG 0
+
+
+Collaboration diagram for Win\+Screen\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_win_screen_a15b72b3c199e9755b787d0e24c6529fe}{update}} (sf\+::\+Time deltatime)
+\item 
+void \mbox{\hyperlink{class_win_screen_a18f23dcf0bdf056d38295f15122ca208}{handle\+Input}} (sf\+::\+Keyboard\+::\+Key key, bool is\+Pressed)
+\item 
+\mbox{\Hypertarget{class_win_screen_aa9cbc37bc26fce5bfb01883c617eb08a}\label{class_win_screen_aa9cbc37bc26fce5bfb01883c617eb08a}} 
+void \mbox{\hyperlink{class_win_screen_aa9cbc37bc26fce5bfb01883c617eb08a}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renders the screen onto the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries Replay\+Button}
+\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries Next\+Button}
+\item 
+\mbox{\hyperlink{class_text_button}{Text\+Button}} {\bfseries Home\+Button}
+\item 
+\mbox{\Hypertarget{class_win_screen_adb7b1aa1335db064544d9760ab3bca16}\label{class_win_screen_adb7b1aa1335db064544d9760ab3bca16}} 
+sf\+::\+Sprite {\bfseries Background}
+\item 
+\mbox{\Hypertarget{class_win_screen_a6ee3429c2bcdda17cd3e048d86afacd2}\label{class_win_screen_a6ee3429c2bcdda17cd3e048d86afacd2}} 
+sf\+::\+Rectangle\+Shape {\bfseries Container}
+\item 
+\mbox{\Hypertarget{class_win_screen_a4a0eae93d465d230c778389b2b59f643}\label{class_win_screen_a4a0eae93d465d230c778389b2b59f643}} 
+sf\+::\+Text {\bfseries Text}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+class for creating you won screen 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_win_screen_a18f23dcf0bdf056d38295f15122ca208}\label{class_win_screen_a18f23dcf0bdf056d38295f15122ca208}} 
+\index{WinScreen@{WinScreen}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!WinScreen@{WinScreen}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily void Win\+Screen\+::handle\+Input (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key,  }\item[{bool}]{is\+Pressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+handles keyboard events(if esc is pressed)
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em is\+Pressed} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_screen_a0bd97acb0f2a115eee6f988fc78f7c55}{Game\+Screen}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_win_screen_a15b72b3c199e9755b787d0e24c6529fe}\label{class_win_screen_a15b72b3c199e9755b787d0e24c6529fe}} 
+\index{WinScreen@{WinScreen}!update@{update}}
+\index{update@{update}!WinScreen@{WinScreen}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Win\+Screen\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{deltatime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+updates all the buttons
+
+
+\begin{DoxyParams}{Parameters}
+{\em deltatime} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_screen_a5d3298b6f70f9c6fedaf489ab42f47fb}{Game\+Screen}}.
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_win_screen_a552e880238e8eab4535c8554c9d46328}\label{class_win_screen_a552e880238e8eab4535c8554c9d46328}} 
+\index{WinScreen@{WinScreen}!HomeButton@{HomeButton}}
+\index{HomeButton@{HomeButton}!WinScreen@{WinScreen}}
+\doxysubsubsection{\texorpdfstring{HomeButton}{HomeButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Win\+Screen\+::\+Home\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(\textcolor{stringliteral}{"{}HOME"{}},}
+\DoxyCodeLine{                                       sf::Vector2f(gameData-\/>getWindow()-\/>getSize().x / 2 + WINSCREEN\_BUTTON\_WIDTH + WINSCREEN\_MARGIN,}
+\DoxyCodeLine{                                                    gameData-\/>getWindow()-\/>getSize().y / 2),}
+\DoxyCodeLine{                                       WINSCREEN\_BUTTON\_WIDTH,}
+\DoxyCodeLine{                                       WINSCREEN\_BUTTON\_HEIGHT)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_win_screen_a86cbfb40aa90d7117dfa588034dd7965}\label{class_win_screen_a86cbfb40aa90d7117dfa588034dd7965}} 
+\index{WinScreen@{WinScreen}!NextButton@{NextButton}}
+\index{NextButton@{NextButton}!WinScreen@{WinScreen}}
+\doxysubsubsection{\texorpdfstring{NextButton}{NextButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Win\+Screen\+::\+Next\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(\textcolor{stringliteral}{"{}NEXT LEVEL"{}},}
+\DoxyCodeLine{                                       sf::Vector2f(gameData-\/>getWindow()-\/>getSize().x / 2,}
+\DoxyCodeLine{                                                    gameData-\/>getWindow()-\/>getSize().y / 2),}
+\DoxyCodeLine{                                       WINSCREEN\_BUTTON\_WIDTH,}
+\DoxyCodeLine{                                       WINSCREEN\_BUTTON\_HEIGHT)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_win_screen_a4d9b8b3ec1721cf42e374cccc0d60013}\label{class_win_screen_a4d9b8b3ec1721cf42e374cccc0d60013}} 
+\index{WinScreen@{WinScreen}!ReplayButton@{ReplayButton}}
+\index{ReplayButton@{ReplayButton}!WinScreen@{WinScreen}}
+\doxysubsubsection{\texorpdfstring{ReplayButton}{ReplayButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_button}{Text\+Button}} Win\+Screen\+::\+Replay\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{class_text_button}{TextButton}}(\textcolor{stringliteral}{"{}REPLAY"{}},}
+\DoxyCodeLine{                                         sf::Vector2f(gameData-\/>getWindow()-\/>getSize().x / 2 -\/ WINSCREEN\_BUTTON\_WIDTH -\/ WINSCREEN\_MARGIN,}
+\DoxyCodeLine{                                                      gameData-\/>getWindow()-\/>getSize().y / 2),}
+\DoxyCodeLine{                                         WINSCREEN\_BUTTON\_WIDTH,}
+\DoxyCodeLine{                                         WINSCREEN\_BUTTON\_HEIGHT)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/screens/Win\+Screen.\+h\item 
+src/\+Screens/Win\+Screen.\+cpp\end{DoxyCompactItemize}

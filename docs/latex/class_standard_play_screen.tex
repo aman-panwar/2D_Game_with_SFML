@@ -1,0 +1,114 @@
+\hypertarget{class_standard_play_screen}{}\doxysection{Standard\+Play\+Screen Class Reference}
+\label{class_standard_play_screen}\index{StandardPlayScreen@{StandardPlayScreen}}
+
+
+Class for creating the play screen.  
+
+
+
+
+{\ttfamily \#include $<$Standard\+Play\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Standard\+Play\+Screen\+:
+% FIG 0
+
+
+Collaboration diagram for Standard\+Play\+Screen\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_standard_play_screen_ae8d0111c017c2cc958c6ca5fcdd591f6}{update}} (sf\+::\+Time delta\+Time)
+\item 
+void \mbox{\hyperlink{class_standard_play_screen_a06016665bb9dff53ab7477de1c9574aa}{render}} ()
+\item 
+void \mbox{\hyperlink{class_standard_play_screen_afb7727ffe81b04d35077d7d44d26df4e}{pause}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_standard_play_screen_a7a3d5c2353bdd13eb041cf44b248f45f}{handle\+Input}} (sf\+::\+Keyboard\+::\+Key key, bool is\+Pressed)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_standard_play_screen_aaa7e546ac452ea0ed1c1eb557dbadf8f}\label{class_standard_play_screen_aaa7e546ac452ea0ed1c1eb557dbadf8f}} 
+\mbox{\hyperlink{class_level}{Level}} {\bfseries my\+Level}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class for creating the play screen. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_standard_play_screen_a7a3d5c2353bdd13eb041cf44b248f45f}\label{class_standard_play_screen_a7a3d5c2353bdd13eb041cf44b248f45f}} 
+\index{StandardPlayScreen@{StandardPlayScreen}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!StandardPlayScreen@{StandardPlayScreen}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily void Standard\+Play\+Screen\+::handle\+Input (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key,  }\item[{bool}]{is\+Pressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+do necessary work based on key work
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em is\+Pressed} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_screen_a0bd97acb0f2a115eee6f988fc78f7c55}{Game\+Screen}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_standard_play_screen_afb7727ffe81b04d35077d7d44d26df4e}\label{class_standard_play_screen_afb7727ffe81b04d35077d7d44d26df4e}} 
+\index{StandardPlayScreen@{StandardPlayScreen}!pause@{pause}}
+\index{pause@{pause}!StandardPlayScreen@{StandardPlayScreen}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily void Standard\+Play\+Screen\+::pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+pauses game 
+
+Reimplemented from \mbox{\hyperlink{class_game_screen}{Game\+Screen}}.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{class_standard_play_screen_a06016665bb9dff53ab7477de1c9574aa}\label{class_standard_play_screen_a06016665bb9dff53ab7477de1c9574aa}} 
+\index{StandardPlayScreen@{StandardPlayScreen}!render@{render}}
+\index{render@{render}!StandardPlayScreen@{StandardPlayScreen}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Standard\+Play\+Screen\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+displays all buttons and background 
+
+Implements \mbox{\hyperlink{class_game_screen_aa6db40bc72a0566084e056b66a07c93d}{Game\+Screen}}.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{class_standard_play_screen_ae8d0111c017c2cc958c6ca5fcdd591f6}\label{class_standard_play_screen_ae8d0111c017c2cc958c6ca5fcdd591f6}} 
+\index{StandardPlayScreen@{StandardPlayScreen}!update@{update}}
+\index{update@{update}!StandardPlayScreen@{StandardPlayScreen}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Standard\+Play\+Screen\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+updates all the buttons on the screen 
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_screen_a5d3298b6f70f9c6fedaf489ab42f47fb}{Game\+Screen}}.
+
+Here is the call graph for this function\+:
+% FIG 5
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/screens/Standard\+Play\+Screen.\+h\item 
+src/\+Screens/Standard\+Play\+Screen.\+cpp\end{DoxyCompactItemize}

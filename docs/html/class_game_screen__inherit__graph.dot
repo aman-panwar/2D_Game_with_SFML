@@ -1,0 +1,28 @@
+digraph "GameScreen"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GameScreen",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="It's the base class for all Screen in the Game."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CustomLevelScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_level_screen.html",tooltip="class for custom level designeer screen"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="InfinityPlayScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_infinity_play_screen.html",tooltip="class for making endless play mode"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="InfinityWinScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_infinity_win_screen.html",tooltip="Class for creating win screen for infinity play."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="LevelScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_level_screen.html",tooltip="this screen displays the diffirent levels available to play"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="LostScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_lost_screen.html",tooltip="Class for creating Lost screen."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="MainMenuScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_main_menu_screen.html",tooltip="Screen for the Main Menu of the Game."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PauseScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pause_screen.html",tooltip="Class for creating pause screen."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="QuitScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quit_screen.html",tooltip="Class for creating quit screen."];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="StandardPlayScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_standard_play_screen.html",tooltip="Class for creating the play screen."];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="WinScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_win_screen.html",tooltip="class for creating you won screen"];
+}

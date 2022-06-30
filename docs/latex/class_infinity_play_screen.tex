@@ -1,0 +1,77 @@
+\hypertarget{class_infinity_play_screen}{}\doxysection{Infinity\+Play\+Screen Class Reference}
+\label{class_infinity_play_screen}\index{InfinityPlayScreen@{InfinityPlayScreen}}
+
+
+class for making endless play mode  
+
+
+
+
+{\ttfamily \#include $<$infinityplayscreen.\+h$>$}
+
+
+
+Inheritance diagram for Infinity\+Play\+Screen\+:
+% FIG 0
+
+
+Collaboration diagram for Infinity\+Play\+Screen\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_infinity_play_screen_a314f9814b54b8755aedac090e26389c6}\label{class_infinity_play_screen_a314f9814b54b8755aedac090e26389c6}} 
+void \mbox{\hyperlink{class_infinity_play_screen_a314f9814b54b8755aedac090e26389c6}{update}} (sf\+::\+Time delta\+Time)
+\begin{DoxyCompactList}\small\item\em Makes the required changes on the screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_infinity_play_screen_a1ee2919a78b6cc1668e7a4620d8e50fc}\label{class_infinity_play_screen_a1ee2919a78b6cc1668e7a4620d8e50fc}} 
+void \mbox{\hyperlink{class_infinity_play_screen_a1ee2919a78b6cc1668e7a4620d8e50fc}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renders the screen onto the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_infinity_play_screen_ab9bca09612bac8a888312f7d739382e9}\label{class_infinity_play_screen_ab9bca09612bac8a888312f7d739382e9}} 
+void \mbox{\hyperlink{class_infinity_play_screen_ab9bca09612bac8a888312f7d739382e9}{pause}} ()
+\begin{DoxyCompactList}\small\item\em renders the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_infinity_play_screen_a755c9c0491b76bf682ce09518833e04c}{handle\+Input}} (sf\+::\+Keyboard\+::\+Key key, bool is\+Pressed)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_infinity_play_screen_a0b7bc150780807a222fedd6d64c07e4a}\label{class_infinity_play_screen_a0b7bc150780807a222fedd6d64c07e4a}} 
+\mbox{\hyperlink{class_level}{Level}} {\bfseries my\+Level}
+\item 
+\mbox{\Hypertarget{class_infinity_play_screen_a46d1c2ad92e47da1db8c30d3b9564d02}\label{class_infinity_play_screen_a46d1c2ad92e47da1db8c30d3b9564d02}} 
+unsigned {\bfseries difficulty} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+class for making endless play mode 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_infinity_play_screen_a755c9c0491b76bf682ce09518833e04c}\label{class_infinity_play_screen_a755c9c0491b76bf682ce09518833e04c}} 
+\index{InfinityPlayScreen@{InfinityPlayScreen}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!InfinityPlayScreen@{InfinityPlayScreen}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily void Infinity\+Play\+Screen\+::handle\+Input (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key,  }\item[{bool}]{is\+Pressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Takes upropriate action for each key 
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em is\+Pressed} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_screen_a0bd97acb0f2a115eee6f988fc78f7c55}{Game\+Screen}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/screens/infinityplayscreen.\+h\item 
+src/\+Screens/Infinity\+Play\+Screen.\+cpp\end{DoxyCompactItemize}

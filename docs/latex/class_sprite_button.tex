@@ -1,0 +1,92 @@
+\hypertarget{class_sprite_button}{}\doxysection{Sprite\+Button Class Reference}
+\label{class_sprite_button}\index{SpriteButton@{SpriteButton}}
+
+
+class to use image as button  
+
+
+
+
+{\ttfamily \#include $<$spritebutton.\+h$>$}
+
+
+
+Inheritance diagram for Sprite\+Button\+:
+% FIG 0
+
+
+Collaboration diagram for Sprite\+Button\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sprite_button_adcbc5e1fd19fea7bde58ed9434ec1c14}\label{class_sprite_button_adcbc5e1fd19fea7bde58ed9434ec1c14}} 
+\mbox{\hyperlink{class_sprite_button_adcbc5e1fd19fea7bde58ed9434ec1c14}{Sprite\+Button}} ()=delete
+\begin{DoxyCompactList}\small\item\em sprite for the button \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_button_aef05d328b7d46e0da9dc80600f11ccc6}{Sprite\+Button}} (const sf\+::\+Texture \&button\+Texture, sf\+::\+Vector2f pos, float width, float height)
+\item 
+void \mbox{\hyperlink{class_sprite_button_a69f835cf83a10157068278e289bb8cef}{update\+Texture}} (const sf\+::\+Texture \&new\+Texture)
+\item 
+\mbox{\Hypertarget{class_sprite_button_ae562cef52086f3dabe14f09ba19e12af}\label{class_sprite_button_ae562cef52086f3dabe14f09ba19e12af}} 
+void \mbox{\hyperlink{class_sprite_button_ae562cef52086f3dabe14f09ba19e12af}{draw}} ()
+\begin{DoxyCompactList}\small\item\em renders the button onto the screen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sprite_button_a96573bf5d8f43ad114e163e3e61fce4e}\label{class_sprite_button_a96573bf5d8f43ad114e163e3e61fce4e}} 
+void \mbox{\hyperlink{class_sprite_button_a96573bf5d8f43ad114e163e3e61fce4e}{update}} ()
+\begin{DoxyCompactList}\small\item\em play the approprite sound, changes colour, and changes the clicked state of the button \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sprite_button_afc552c464a09ef336f1f42cd77ec51eb}\label{class_sprite_button_afc552c464a09ef336f1f42cd77ec51eb}} 
+void \mbox{\hyperlink{class_sprite_button_afc552c464a09ef336f1f42cd77ec51eb}{set\+Rotation}} (float)
+\begin{DoxyCompactList}\small\item\em set the rotation of the sprite \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sprite_button_a861ce254f259e09330cdb6b73cbfb5d4}\label{class_sprite_button_a861ce254f259e09330cdb6b73cbfb5d4}} 
+sf\+::\+Sprite {\bfseries object}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+class to use image as button 
+
+displays an image as a button. Scale the image to desired values. This class is similar to textbutton 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sprite_button_aef05d328b7d46e0da9dc80600f11ccc6}\label{class_sprite_button_aef05d328b7d46e0da9dc80600f11ccc6}} 
+\index{SpriteButton@{SpriteButton}!SpriteButton@{SpriteButton}}
+\index{SpriteButton@{SpriteButton}!SpriteButton@{SpriteButton}}
+\doxysubsubsection{\texorpdfstring{SpriteButton()}{SpriteButton()}}
+{\footnotesize\ttfamily Sprite\+Button\+::\+Sprite\+Button (\begin{DoxyParamCaption}\item[{const sf\+::\+Texture \&}]{button\+Texture,  }\item[{sf\+::\+Vector2f}]{pos,  }\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})}
+
+constructor for the \mbox{\hyperlink{class_sprite_button}{Sprite\+Button}} 
+\begin{DoxyParams}{Parameters}
+{\em button\+Texture} & the texture containing the image \\
+\hline
+{\em pos} & the cordinates of the centre of the button \\
+\hline
+{\em width} & the width of the button \\
+\hline
+{\em height} & the height of the button \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sprite_button_a69f835cf83a10157068278e289bb8cef}\label{class_sprite_button_a69f835cf83a10157068278e289bb8cef}} 
+\index{SpriteButton@{SpriteButton}!updateTexture@{updateTexture}}
+\index{updateTexture@{updateTexture}!SpriteButton@{SpriteButton}}
+\doxysubsubsection{\texorpdfstring{updateTexture()}{updateTexture()}}
+{\footnotesize\ttfamily void Sprite\+Button\+::update\+Texture (\begin{DoxyParamCaption}\item[{const sf\+::\+Texture \&}]{new\+Texture }\end{DoxyParamCaption})}
+
+sets a new Texture for the sprite 
+\begin{DoxyParams}{Parameters}
+{\em new\+Texture} & the texture containin the new image \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/buttons/spritebutton.\+h\item 
+src/buttons/spritebutton.\+cpp\end{DoxyCompactItemize}

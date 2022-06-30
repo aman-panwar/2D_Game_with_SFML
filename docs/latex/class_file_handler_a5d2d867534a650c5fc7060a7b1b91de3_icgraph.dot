@@ -1,0 +1,14 @@
+digraph "FileHandler::savePlayerInfo"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="FileHandler::savePlayerInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Leaderboard::addPlayer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_leaderboard.html#adcfa6192b3ee90cf5b0616a9a4e9e7c4",tooltip="add/updates the name and maxscore of a player to the list"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="InfinityWinScreen::\lupdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_infinity_win_screen.html#aaff6d27f7826e17603181358cc5bc9ac",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="LostScreen::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_lost_screen.html#aa89aa24f79d1e4114c997587d399321a",tooltip=" "];
+}

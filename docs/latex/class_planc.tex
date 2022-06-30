@@ -1,0 +1,82 @@
+\hypertarget{class_planc}{}\doxysection{Planc Class Reference}
+\label{class_planc}\index{Planc@{Planc}}
+
+
+class holding all info of planc  
+
+
+
+
+{\ttfamily \#include $<$planc.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_planc_a753c3ac2bddd3eb7a372337041e2f837}\label{class_planc_a753c3ac2bddd3eb7a372337041e2f837}} 
+enum class {\bfseries Dir} \{ {\bfseries Left}
+, {\bfseries Right}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_planc_a9e49daad426eabc97374468bed9c8256}\label{class_planc_a9e49daad426eabc97374468bed9c8256}} 
+void {\bfseries activate\+Momentum} ()
+\item 
+\mbox{\Hypertarget{class_planc_a594ac06954dece150556fd3289f65169}\label{class_planc_a594ac06954dece150556fd3289f65169}} 
+void \mbox{\hyperlink{class_planc_a594ac06954dece150556fd3289f65169}{update}} (sf\+::\+Time delta\+Time)
+\begin{DoxyCompactList}\small\item\em activates the momentum property \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_planc_aaf9c974c750048f43e035200e0ce49a5}\label{class_planc_aaf9c974c750048f43e035200e0ce49a5}} 
+void \mbox{\hyperlink{class_planc_aaf9c974c750048f43e035200e0ce49a5}{draw}} ()
+\begin{DoxyCompactList}\small\item\em updates the planc \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_planc_a6d8b707023cf5c7281e795f805275e44}\label{class_planc_a6d8b707023cf5c7281e795f805275e44}} 
+void {\bfseries move} (Dir direction, bool is\+Pressed)
+\item 
+\mbox{\Hypertarget{class_planc_a9f2504883a0fe351e0689661e6eef384}\label{class_planc_a9f2504883a0fe351e0689661e6eef384}} 
+void \mbox{\hyperlink{class_planc_a9f2504883a0fe351e0689661e6eef384}{increase\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em moves the block left or right \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_planc_aacfa620850ddf29115a1efe6f666bd80}\label{class_planc_aacfa620850ddf29115a1efe6f666bd80}} 
+void {\bfseries decrease\+Speed} ()
+\item 
+\mbox{\Hypertarget{class_planc_af12db7e949b144bd61c8af04812bd398}\label{class_planc_af12db7e949b144bd61c8af04812bd398}} 
+void {\bfseries increase\+Length} ()
+\item 
+\mbox{\Hypertarget{class_planc_a109f316f33f0024d61b7f5df21c5d457}\label{class_planc_a109f316f33f0024d61b7f5df21c5d457}} 
+void {\bfseries decrease\+Length} ()
+\item 
+\mbox{\Hypertarget{class_planc_a61c4b2d181cf3319986effa638c240e5}\label{class_planc_a61c4b2d181cf3319986effa638c240e5}} 
+sf\+::\+Vector2f {\bfseries get\+Velocity} ()
+\item 
+\mbox{\Hypertarget{class_planc_a260a8222ddc6217b26318e8c2f1199a1}\label{class_planc_a260a8222ddc6217b26318e8c2f1199a1}} 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_planc_a260a8222ddc6217b26318e8c2f1199a1}{get\+Bounds}} ()
+\begin{DoxyCompactList}\small\item\em return the current speed of the planc \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_planc_aaa83a449b696440e69a592bd1e93651f}\label{class_planc_aaa83a449b696440e69a592bd1e93651f}} 
+sf\+::\+Sprite {\bfseries object}
+\item 
+\mbox{\Hypertarget{class_planc_a432937bcbf1d28492777e6141d5788e7}\label{class_planc_a432937bcbf1d28492777e6141d5788e7}} 
+sf\+::\+Time {\bfseries momentum\+End\+Time} = sf\+::\+Time\+::\+Zero
+\item 
+\mbox{\Hypertarget{class_planc_af693c877cabebfa0ea661bb210d4333c}\label{class_planc_af693c877cabebfa0ea661bb210d4333c}} 
+sf\+::\+Vector2f {\bfseries velocity}
+\item 
+\mbox{\Hypertarget{class_planc_a4e8830abeccf2cf5ed6877e88ba0af13}\label{class_planc_a4e8830abeccf2cf5ed6877e88ba0af13}} 
+float {\bfseries cur\+\_\+speed} = DEFAULT\+\_\+\+PLANC\+\_\+\+SPEED
+\item 
+\mbox{\Hypertarget{class_planc_aaeaaa5262efb366c3e14a1facf31ebbb}\label{class_planc_aaeaaa5262efb366c3e14a1facf31ebbb}} 
+sf\+::\+Clock {\bfseries my\+Clock}
+\item 
+\mbox{\Hypertarget{class_planc_ae616839d0acf6b7fb5cb52ff9186d3d7}\label{class_planc_ae616839d0acf6b7fb5cb52ff9186d3d7}} 
+float {\bfseries last\+\_\+dir} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class holding all info of planc 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/planc.\+h\item 
+src/planc.\+cpp\end{DoxyCompactItemize}

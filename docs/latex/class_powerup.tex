@@ -1,0 +1,100 @@
+\hypertarget{class_powerup}{}\doxysection{Powerup Class Reference}
+\label{class_powerup}\index{Powerup@{Powerup}}
+
+
+Base class for all the powerups.  
+
+
+
+
+{\ttfamily \#include $<$powerup.\+h$>$}
+
+
+
+Inheritance diagram for Powerup\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_powerup_a838de258b060171cc27e58f7398df053}{update}} (sf\+::\+Time delta\+Time)
+\item 
+\mbox{\Hypertarget{class_powerup_a803dac5d7f28e04773a0b8bb9a9778f6}\label{class_powerup_a803dac5d7f28e04773a0b8bb9a9778f6}} 
+virtual void {\bfseries handle\+Collision} (\mbox{\hyperlink{class_planc}{Planc}} \&\mbox{\hyperlink{class_planc}{Planc}})=0
+\item 
+bool \mbox{\hyperlink{class_powerup_a3a1b0ea65c576d0b81a1107d786ce599}{is\+Alive}} ()
+\begin{DoxyCompactList}\small\item\em check if collides with planc, if yes then makes required change to planc \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_powerup_a48fc92558c47cd309b021d1ebb2a9225}{draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_powerup_a1e7c22c1217c7ccac978b15c268c4682}\label{class_powerup_a1e7c22c1217c7ccac978b15c268c4682}} 
+\mbox{\hyperlink{class_powerup_a1e7c22c1217c7ccac978b15c268c4682}{Powerup}} ()=delete
+\begin{DoxyCompactList}\small\item\em holds texture colission sound \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_powerup_afe4fd5b27335bae00b565ca7c661d12b}\label{class_powerup_afe4fd5b27335bae00b565ca7c661d12b}} 
+{\bfseries Powerup} (sf\+::\+Vector2f pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_powerup_afec8129973cacb53250f15b2e66cb7de}\label{class_powerup_afec8129973cacb53250f15b2e66cb7de}} 
+sf\+::\+Sprite {\bfseries object}
+\item 
+\mbox{\Hypertarget{class_powerup_a51d768cad39251dd784e5fd2fcfc7c39}\label{class_powerup_a51d768cad39251dd784e5fd2fcfc7c39}} 
+sf\+::\+Sound \mbox{\hyperlink{class_powerup_a51d768cad39251dd784e5fd2fcfc7c39}{Collision\+Sound}}
+\begin{DoxyCompactList}\small\item\em holds texture of powerups \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_powerup_a88e9184584d6ed0295aab01c7218abe8}\label{class_powerup_a88e9184584d6ed0295aab01c7218abe8}} 
+bool \mbox{\hyperlink{class_powerup_a88e9184584d6ed0295aab01c7218abe8}{is\+\_\+\+Alive}} = true
+\begin{DoxyCompactList}\small\item\em constructor -\/ loads corresponding texture and set its position to broken brick \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for all the powerups. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_powerup_a48fc92558c47cd309b021d1ebb2a9225}\label{class_powerup_a48fc92558c47cd309b021d1ebb2a9225}} 
+\index{Powerup@{Powerup}!draw@{draw}}
+\index{draw@{draw}!Powerup@{Powerup}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Powerup\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+draw the sprite on screen Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{class_powerup_a3a1b0ea65c576d0b81a1107d786ce599}\label{class_powerup_a3a1b0ea65c576d0b81a1107d786ce599}} 
+\index{Powerup@{Powerup}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!Powerup@{Powerup}}
+\doxysubsubsection{\texorpdfstring{isAlive()}{isAlive()}}
+{\footnotesize\ttfamily bool Powerup\+::is\+Alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+check if collides with planc, if yes then makes required change to planc 
+
+tells us if powerup is still alive or not
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_powerup_a838de258b060171cc27e58f7398df053}\label{class_powerup_a838de258b060171cc27e58f7398df053}} 
+\index{Powerup@{Powerup}!update@{update}}
+\index{update@{update}!Powerup@{Powerup}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Powerup\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{delta\+Time }\end{DoxyParamCaption})}
+
+makes the falling effect of powerup
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/powerups/powerup.\+h\item 
+src/powerups/powerup.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,50 @@
+digraph "ScreenManager::goToScreen"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="ScreenManager::goToScreen",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="InfinityPlayScreen\l::handleInput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_infinity_play_screen.html#a755c9c0491b76bf682ce09518833e04c",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="LevelScreen::handleInput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_level_screen.html#a3d3eac914a9c90c3149647609c69cd70",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="LostScreen::handleInput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_lost_screen.html#af755d68e321c8c16e85baeaed9d0b2a1",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="MainMenuScreen::handleInput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_main_menu_screen.html#ab380121784f84f35d660a306dadc0e89",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PauseScreen::handleInput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pause_screen.html#a67eca71b4ef32aa2427a4cc24759d5b2",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="QuitScreen::handleInput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quit_screen.html#ac5d49a03fbdab6bce811447e818b4666",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="StandardPlayScreen\l::handleInput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_standard_play_screen.html#a7a3d5c2353bdd13eb041cf44b248f45f",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="WinScreen::handleInput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_win_screen.html#a18f23dcf0bdf056d38295f15122ca208",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="LevelScreen::manageButton\lClick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_level_screen.html#afcc71ddf831c53a9f4ea199a2cdad5d1",tooltip="does the required aciton on button clicks"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="LevelScreen::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_level_screen.html#aa1c5ae2e5452dec4c1bdf9b5bfb2e213",tooltip="updates all the elements in the screen"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="InfinityPlayScreen\l::pause",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_infinity_play_screen.html#ab9bca09612bac8a888312f7d739382e9",tooltip="renders the game"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="StandardPlayScreen\l::pause",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_standard_play_screen.html#afb7727ffe81b04d35077d7d44d26df4e",tooltip=" "];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="InfinityWinScreen::\lupdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_infinity_win_screen.html#aaff6d27f7826e17603181358cc5bc9ac",tooltip=" "];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="LostScreen::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_lost_screen.html#aa89aa24f79d1e4114c997587d399321a",tooltip=" "];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="PauseScreen::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pause_screen.html#a02be0814a458d2782380899607e2afe2",tooltip=" "];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="QuitScreen::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quit_screen.html#a79f30e37d9d22e184629b165f7442c45",tooltip=" "];
+  Node1 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="WinScreen::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_win_screen.html#a15b72b3c199e9755b787d0e24c6529fe",tooltip=" "];
+  Node1 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="CustomLevelScreen::\lupdateButtons",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_level_screen.html#a7bce4169f27eb53560a97d80db535977",tooltip=" "];
+  Node19 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="CustomLevelScreen::\lupdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_custom_level_screen.html#a8c284c4a05647b3ea5f259ec780ecdd1",tooltip=" "];
+  Node1 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="MainMenuScreen::updateButtons",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_main_menu_screen.html#a98dafb236117e978f0d6009a4a0b7e39",tooltip="update all the button on the screen"];
+  Node21 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="MainMenuScreen::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_main_menu_screen.html#af4d22a618029ec11277886737c360896",tooltip="Makes the changes required on the main screen."];
+}

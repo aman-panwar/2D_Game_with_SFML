@@ -1,0 +1,173 @@
+\hypertarget{class_block}{}\doxysection{Block Class Reference}
+\label{class_block}\index{Block@{Block}}
+
+
+The base class for all the blocks in the game.  
+
+
+
+
+{\ttfamily \#include $<$block.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_block_ae9b59a71eb709614278e49d4497367ee}{Block}} (Block\+Style block\+Style, sf\+::\+Vector2f size, sf\+::\+Vector2f pos)
+\item 
+bool \mbox{\hyperlink{class_block_a81973bd319285f995871de5182f15b78}{Check\+Colission}} (sf\+::\+Float\+Rect ballpos)
+\item 
+void \mbox{\hyperlink{class_block_aedf051ddfcf154fa5941f0d47bc10a4d}{updatetexture}} ()
+\item 
+void \mbox{\hyperlink{class_block_af6f0f98429747e4dc2ee7c871f1678d3}{draw}} ()
+\item 
+unsigned \mbox{\hyperlink{class_block_a4d336c91bd91cde44353ef1cb93b7c73}{gethealth}} ()
+\item 
+void \mbox{\hyperlink{class_block_a9d9d52956fa0c163372eaad82a1ddfe6}{take\+Damage}} (unsigned damage)
+\item 
+Power\+Up \mbox{\hyperlink{class_block_a4f44deeebaba5400c54a77a03f2200fe}{drop\+Power\+Up}} ()
+\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_block_ac82dc73a511831f0a1903c77b08d382f}{get\+Bounds}} ()
+\begin{DoxyCompactList}\small\item\em returns global bounds of block \end{DoxyCompactList}\item 
+Block\+Style \mbox{\hyperlink{class_block_af689425adf64650356d0db7dd175dea3}{get\+Block\+Style}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_block_a53b86d7d04ffbd4f0cf6414c46efee38}\label{class_block_a53b86d7d04ffbd4f0cf6414c46efee38}} 
+sf\+::\+Sprite {\bfseries object}
+\item 
+\mbox{\Hypertarget{class_block_ad37c4467cbcd9a9200a73282265ebb57}\label{class_block_ad37c4467cbcd9a9200a73282265ebb57}} 
+sf\+::\+Sprite {\bfseries power\+Up\+Marker}
+\item 
+\mbox{\Hypertarget{class_block_ab68ac778a48ac09bc6052f45fdd2fba0}\label{class_block_ab68ac778a48ac09bc6052f45fdd2fba0}} 
+unsigned {\bfseries health}
+\item 
+\mbox{\Hypertarget{class_block_a8a728b03c80a98eec1d431835e1552ee}\label{class_block_a8a728b03c80a98eec1d431835e1552ee}} 
+Block\+Style {\bfseries myblockstyle}
+\item 
+\mbox{\Hypertarget{class_block_aec5c9c728d2492603be610973b339c52}\label{class_block_aec5c9c728d2492603be610973b339c52}} 
+bool {\bfseries ifpower} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_block_ae5a7740bc3d15a059ffe630a3efa1fb7}{is\+Block\+Dead}} (const \mbox{\hyperlink{class_block}{Block}} \&myblock)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for all the blocks in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_block_ae9b59a71eb709614278e49d4497367ee}\label{class_block_ae9b59a71eb709614278e49d4497367ee}} 
+\index{Block@{Block}!Block@{Block}}
+\index{Block@{Block}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{Block()}{Block()}}
+{\footnotesize\ttfamily Block\+::\+Block (\begin{DoxyParamCaption}\item[{Block\+Style}]{block\+Style,  }\item[{sf\+::\+Vector2f}]{size,  }\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
+
+creates a new block 
+\begin{DoxyParams}{Parameters}
+{\em block\+Style} & the style of the block to be constructed \\
+\hline
+{\em Pos} & place in grid where block is to be set \\
+\hline
+{\em size} & size of the block \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_block_a81973bd319285f995871de5182f15b78}\label{class_block_a81973bd319285f995871de5182f15b78}} 
+\index{Block@{Block}!CheckColission@{CheckColission}}
+\index{CheckColission@{CheckColission}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{CheckColission()}{CheckColission()}}
+{\footnotesize\ttfamily bool Block\+::\+Check\+Colission (\begin{DoxyParamCaption}\item[{sf\+::\+Float\+Rect}]{ballpos }\end{DoxyParamCaption})}
+
+check if ball collided the given block 
+\begin{DoxyParams}{Parameters}
+{\em ballpos} & takes ball position and compare it with block pos \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_af6f0f98429747e4dc2ee7c871f1678d3}\label{class_block_af6f0f98429747e4dc2ee7c871f1678d3}} 
+\index{Block@{Block}!draw@{draw}}
+\index{draw@{draw}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Block\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+displays block \mbox{\Hypertarget{class_block_a4f44deeebaba5400c54a77a03f2200fe}\label{class_block_a4f44deeebaba5400c54a77a03f2200fe}} 
+\index{Block@{Block}!dropPowerUp@{dropPowerUp}}
+\index{dropPowerUp@{dropPowerUp}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{dropPowerUp()}{dropPowerUp()}}
+{\footnotesize\ttfamily Power\+Up Block\+::drop\+Power\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+return the kind of power up the block has. Returns the power up only when the health is 0 \begin{DoxyReturn}{Returns}
+the power up type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_block_af689425adf64650356d0db7dd175dea3}\label{class_block_af689425adf64650356d0db7dd175dea3}} 
+\index{Block@{Block}!getBlockStyle@{getBlockStyle}}
+\index{getBlockStyle@{getBlockStyle}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{getBlockStyle()}{getBlockStyle()}}
+{\footnotesize\ttfamily Block\+Style Block\+::get\+Block\+Style (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the \mbox{\hyperlink{class_block}{Block}} Style object
+
+\begin{DoxyReturn}{Returns}
+Block\+Style 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_block_ac82dc73a511831f0a1903c77b08d382f}\label{class_block_ac82dc73a511831f0a1903c77b08d382f}} 
+\index{Block@{Block}!getBounds@{getBounds}}
+\index{getBounds@{getBounds}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{getBounds()}{getBounds()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Block\+::get\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns global bounds of block 
+
+\begin{DoxyReturn}{Returns}
+bounds of block 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_block_a4d336c91bd91cde44353ef1cb93b7c73}\label{class_block_a4d336c91bd91cde44353ef1cb93b7c73}} 
+\index{Block@{Block}!gethealth@{gethealth}}
+\index{gethealth@{gethealth}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{gethealth()}{gethealth()}}
+{\footnotesize\ttfamily unsigned Block\+::gethealth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+block health 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_block_a9d9d52956fa0c163372eaad82a1ddfe6}\label{class_block_a9d9d52956fa0c163372eaad82a1ddfe6}} 
+\index{Block@{Block}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
+{\footnotesize\ttfamily void Block\+::take\+Damage (\begin{DoxyParamCaption}\item[{unsigned}]{damage }\end{DoxyParamCaption})}
+
+take damage value from block and remove it from health of block \mbox{\Hypertarget{class_block_aedf051ddfcf154fa5941f0d47bc10a4d}\label{class_block_aedf051ddfcf154fa5941f0d47bc10a4d}} 
+\index{Block@{Block}!updatetexture@{updatetexture}}
+\index{updatetexture@{updatetexture}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{updatetexture()}{updatetexture()}}
+{\footnotesize\ttfamily void Block\+::updatetexture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+updates texture based on health 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_block_ae5a7740bc3d15a059ffe630a3efa1fb7}\label{class_block_ae5a7740bc3d15a059ffe630a3efa1fb7}} 
+\index{Block@{Block}!isBlockDead@{isBlockDead}}
+\index{isBlockDead@{isBlockDead}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{isBlockDead}{isBlockDead}}
+{\footnotesize\ttfamily bool is\+Block\+Dead (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_block}{Block}} \&}]{myblock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em myblock} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/blocks/block.\+h\item 
+src/block.\+cpp\end{DoxyCompactItemize}

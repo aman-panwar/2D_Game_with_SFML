@@ -1,0 +1,168 @@
+\hypertarget{class_ball}{}\doxysection{Ball Class Reference}
+\label{class_ball}\index{Ball@{Ball}}
+
+
+The base class for all the balls in the game.  
+
+
+
+
+{\ttfamily \#include $<$ball.\+h$>$}
+
+
+
+Inheritance diagram for Ball\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ball_ab8a8533e3596e8289eb153008d61f2c6}{Ball}} (sf\+::\+Vector2f pos, sf\+::\+Vector2f vel)
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_ball_aec588ccecdaf0e015dc731737f0dac97}{get\+Centre\+Position}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_ball_adea02eee543227cd9dd03779a3cdded4}{handle\+Collision}} (sf\+::\+Float\+Rect obstacle, sf\+::\+Time delta\+Time)
+\item 
+\mbox{\Hypertarget{class_ball_a3b7dc4f5bb601c174148b0e699cf0931}\label{class_ball_a3b7dc4f5bb601c174148b0e699cf0931}} 
+virtual void {\bfseries increase\+Speed} ()
+\item 
+\mbox{\Hypertarget{class_ball_a601597ac95647dd8a565c09cd377cf5c}\label{class_ball_a601597ac95647dd8a565c09cd377cf5c}} 
+virtual void {\bfseries decrease\+Speed} ()
+\item 
+\mbox{\Hypertarget{class_ball_a2977f95e0c4e967fe9c8fbad8c91aa3f}\label{class_ball_a2977f95e0c4e967fe9c8fbad8c91aa3f}} 
+void {\bfseries update} (sf\+::\+Time delta\+Time)
+\item 
+\mbox{\Hypertarget{class_ball_a4881a598b5f41b836fad7945c40177fd}\label{class_ball_a4881a598b5f41b836fad7945c40177fd}} 
+virtual void {\bfseries draw} ()
+\item 
+\mbox{\Hypertarget{class_ball_a2bbfb671a64451b2550b5e46b2963929}\label{class_ball_a2bbfb671a64451b2550b5e46b2963929}} 
+bool {\bfseries is\+In\+Bounds} ()
+\item 
+\mbox{\Hypertarget{class_ball_a3132aa46e8006e426d61cddc8c342e32}\label{class_ball_a3132aa46e8006e426d61cddc8c342e32}} 
+unsigned {\bfseries get\+Damage} ()
+\item 
+\mbox{\Hypertarget{class_ball_aafe3e372c2d69581b460a3bc4177be34}\label{class_ball_aafe3e372c2d69581b460a3bc4177be34}} 
+void {\bfseries add\+To\+Velocity} (sf\+::\+Vector2f velocity\+\_\+addition)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ball_aaa6fbd99f4b86a452779f6922692a3c0}{set\+Position}} (sf\+::\+Vector2f new\+Pos)
+\begin{DoxyCompactList}\small\item\em Holds the bouncing Sound. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ball_a01a1890f5a86e8caeb4f91660a4f5700}{get\+Radius}} ()
+\item 
+virtual void \mbox{\hyperlink{class_ball_a58d586c10008a9240e05af2af77b313c}{bounce\+Off}} (sf\+::\+Float\+Rect)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ball_a8703c8e1d24917bb8f929ae0dcefc064}\label{class_ball_a8703c8e1d24917bb8f929ae0dcefc064}} 
+sf\+::\+Vector2f {\bfseries postion}
+\item 
+\mbox{\Hypertarget{class_ball_a8ab4e883d502142a717ad5ca9543dec4}\label{class_ball_a8ab4e883d502142a717ad5ca9543dec4}} 
+sf\+::\+Vector2f \mbox{\hyperlink{class_ball_a8ab4e883d502142a717ad5ca9543dec4}{velocity}}
+\begin{DoxyCompactList}\small\item\em position of the ball \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ball_ae749d8504477fb5a9ae2197ac3d84c7f}\label{class_ball_ae749d8504477fb5a9ae2197ac3d84c7f}} 
+sf\+::\+Sprite \mbox{\hyperlink{class_ball_ae749d8504477fb5a9ae2197ac3d84c7f}{object}}
+\begin{DoxyCompactList}\small\item\em velocity of the ball \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ball_a97ff8f6bf1708762a8dcef798c1400bd}\label{class_ball_a97ff8f6bf1708762a8dcef798c1400bd}} 
+unsigned \mbox{\hyperlink{class_ball_a97ff8f6bf1708762a8dcef798c1400bd}{damage}}
+\begin{DoxyCompactList}\small\item\em the actual sprite of the ball \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ball_a2f7a49fa6f2cac9b4d89a51547c0b21d}\label{class_ball_a2f7a49fa6f2cac9b4d89a51547c0b21d}} 
+sf\+::\+Sound \mbox{\hyperlink{class_ball_a2f7a49fa6f2cac9b4d89a51547c0b21d}{bounce\+Sound}}
+\begin{DoxyCompactList}\small\item\em the damage the ball causes \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for all the balls in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ball_ab8a8533e3596e8289eb153008d61f2c6}\label{class_ball_ab8a8533e3596e8289eb153008d61f2c6}} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos,  }\item[{sf\+::\+Vector2f}]{vel }\end{DoxyParamCaption})}
+
+Constructor for the \mbox{\hyperlink{class_ball}{Ball}} 
+\begin{DoxyParams}{Parameters}
+{\em pos} & the initial position of the ball \\
+\hline
+{\em vel} & the initial velocity of the ball \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ball_a58d586c10008a9240e05af2af77b313c}\label{class_ball_a58d586c10008a9240e05af2af77b313c}} 
+\index{Ball@{Ball}!bounceOff@{bounceOff}}
+\index{bounceOff@{bounceOff}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{bounceOff()}{bounceOff()}}
+{\footnotesize\ttfamily void Ball\+::bounce\+Off (\begin{DoxyParamCaption}\item[{sf\+::\+Float\+Rect}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Bounces the ball off an object 
+\begin{DoxyParams}{Parameters}
+{\em obstacle} & the smallest sf\+::\+Float\+Rect encapsulating the object \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_crazy_ball_ae73d25adfc59aff2d6d7d26f746b14bf}{Crazy\+Ball}}.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{class_ball_aec588ccecdaf0e015dc731737f0dac97}\label{class_ball_aec588ccecdaf0e015dc731737f0dac97}} 
+\index{Ball@{Ball}!getCentrePosition@{getCentrePosition}}
+\index{getCentrePosition@{getCentrePosition}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getCentrePosition()}{getCentrePosition()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Ball\+::get\+Centre\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the current positon of the centre of the ball \begin{DoxyReturn}{Returns}
+current centre position of the ball 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ball_a01a1890f5a86e8caeb4f91660a4f5700}\label{class_ball_a01a1890f5a86e8caeb4f91660a4f5700}} 
+\index{Ball@{Ball}!getRadius@{getRadius}}
+\index{getRadius@{getRadius}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getRadius()}{getRadius()}}
+{\footnotesize\ttfamily float Ball\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the current positon of the ball \begin{DoxyReturn}{Returns}
+radius of the ball 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ball_adea02eee543227cd9dd03779a3cdded4}\label{class_ball_adea02eee543227cd9dd03779a3cdded4}} 
+\index{Ball@{Ball}!handleCollision@{handleCollision}}
+\index{handleCollision@{handleCollision}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{handleCollision()}{handleCollision()}}
+{\footnotesize\ttfamily bool Ball\+::handle\+Collision (\begin{DoxyParamCaption}\item[{sf\+::\+Float\+Rect}]{obstacle,  }\item[{sf\+::\+Time}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles the collision with a sf\+::\+Float\+Rect 
+\begin{DoxyParams}{Parameters}
+{\em obstacle} & is the smallest sf\+::\+Float\+Rect encapsulating the object \\
+\hline
+{\em delta\+Time} & is the delta time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if there is collision, false otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_ball_aaa6fbd99f4b86a452779f6922692a3c0}\label{class_ball_aaa6fbd99f4b86a452779f6922692a3c0}} 
+\index{Ball@{Ball}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Ball\+::set\+Position (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{new\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Holds the bouncing Sound. 
+
+Sets a new position of the ball 
+\begin{DoxyParams}{Parameters}
+{\em new\+Pos} & the new position of the ball to be set \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/balls/ball.\+h\item 
+src/ball/ball.\+cpp\end{DoxyCompactItemize}

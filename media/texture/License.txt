@@ -1,0 +1,24 @@
+downloaded from https://jamiecross.itch.io/breakout-brick-breaker-game-tile-set-free	
+
+Breakout Game Tile Set Free
+
+From Jamie Cross (www.jamie-cross.net)
+
+------------------------------
+
+These game assets are being released under the license (Creative Commons Zero, CC0) http://creativecommons.org/publicdomain/zero/1.0/
+
+You may use these assets in personal and commercial projects.
+
+------------------------------
+
+
+
+
+back.png downloaded from : https://opengameart.org/content/space-background-1 released under WTFPL(DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE)
+
+blocks1.jpg downloaded from : https://opengameart.org/content/wall-of-large-bricks released under CC0
+
+mute.png downloaded from : https://opengameart.org/content/play-pause-mute-and-unmute-buttons released under CC0
+
+power_up.png/blockhaspowerup.png downloaded from : https://opengameart.org/content/blue-star under CC0

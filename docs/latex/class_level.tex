@@ -1,0 +1,241 @@
+\hypertarget{class_level}{}\doxysection{Level Class Reference}
+\label{class_level}\index{Level@{Level}}
+
+
+class for start a level choosen and play  
+
+
+
+
+{\ttfamily \#include $<$level.\+h$>$}
+
+
+
+Collaboration diagram for Level\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_level_ad54b0dda1e7775b045ac253a1295268f}{Load}} (std\+::list$<$ \mbox{\hyperlink{class_block}{Block}} $>$ info)
+\item 
+\mbox{\Hypertarget{class_level_a52e20933533be47686c6e87fd2ddc218}\label{class_level_a52e20933533be47686c6e87fd2ddc218}} 
+void {\bfseries Generate\+Random} (unsigned difficulty)
+\item 
+void \mbox{\hyperlink{class_level_a93cd07946ca9a358fd677265e90fcfce}{update}} (sf\+::\+Time delta\+Time)
+\item 
+void \mbox{\hyperlink{class_level_a3fbebdbe8d206602492f486ccbb3ccfe}{Start\+Level}} ()
+\item 
+void \mbox{\hyperlink{class_level_a9b7478818e1aa80d3d4d059fa5faf9bf}{draw}} ()
+\item 
+\mbox{\Hypertarget{class_level_a92962845323ea6f78e3a31359d726190}\label{class_level_a92962845323ea6f78e3a31359d726190}} 
+void {\bfseries Move\+Left} (bool)
+\item 
+\mbox{\Hypertarget{class_level_a418d8ee2ff2f7f41160fad0387f8cd71}\label{class_level_a418d8ee2ff2f7f41160fad0387f8cd71}} 
+void {\bfseries Move\+Right} (bool)
+\item 
+\mbox{\Hypertarget{class_level_a48005adb12ae4aba9644b5fbaeb294fe}\label{class_level_a48005adb12ae4aba9644b5fbaeb294fe}} 
+unsigned {\bfseries get\+Lives} ()
+\item 
+\mbox{\Hypertarget{class_level_a7dfc7efaba990093ca692abf2d0055bd}\label{class_level_a7dfc7efaba990093ca692abf2d0055bd}} 
+void {\bfseries set\+Lives} (unsigned new\+Lives)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_level_a33cc62742e6cb8e6f97d5d801aba52f3}\label{class_level_a33cc62742e6cb8e6f97d5d801aba52f3}} 
+void {\bfseries init\+Score} ()
+\item 
+\mbox{\Hypertarget{class_level_a7205f5d39aec66e116173dd779ac75b5}\label{class_level_a7205f5d39aec66e116173dd779ac75b5}} 
+void \mbox{\hyperlink{class_level_a7205f5d39aec66e116173dd779ac75b5}{init\+Audio}} ()
+\begin{DoxyCompactList}\small\item\em initialises score text \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_a8fc82859835a00b04acb24d5f4203a46}\label{class_level_a8fc82859835a00b04acb24d5f4203a46}} 
+void \mbox{\hyperlink{class_level_a8fc82859835a00b04acb24d5f4203a46}{init\+Background}} ()
+\begin{DoxyCompactList}\small\item\em initialises all the req audio \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_a10e98f37031f97a65a7c9b7c4f41dbf2}\label{class_level_a10e98f37031f97a65a7c9b7c4f41dbf2}} 
+void \mbox{\hyperlink{class_level_a10e98f37031f97a65a7c9b7c4f41dbf2}{inti\+Lives}} ()
+\begin{DoxyCompactList}\small\item\em initialises background \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_a48a11523f3e91e55e3ab640605889d07}\label{class_level_a48a11523f3e91e55e3ab640605889d07}} 
+void \mbox{\hyperlink{class_level_a48a11523f3e91e55e3ab640605889d07}{inti\+Balls}} ()
+\begin{DoxyCompactList}\small\item\em initialises pre set no of lives \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_afa893b95558377f104584a78fc3f3df4}\label{class_level_afa893b95558377f104584a78fc3f3df4}} 
+void \mbox{\hyperlink{class_level_afa893b95558377f104584a78fc3f3df4}{init\+Start\+Level\+Text}} ()
+\begin{DoxyCompactList}\small\item\em initialises defaults no of starting balls \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_a3329f3017deb5ee47f6b30f380532422}\label{class_level_a3329f3017deb5ee47f6b30f380532422}} 
+bool \mbox{\hyperlink{class_level_a3329f3017deb5ee47f6b30f380532422}{update\+Start\+State}} ()
+\begin{DoxyCompactList}\small\item\em initialises start level text (press space to start) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_a4c5c9ce784bd1272bdda713ca2a0ec66}\label{class_level_a4c5c9ce784bd1272bdda713ca2a0ec66}} 
+void \mbox{\hyperlink{class_level_a4c5c9ce784bd1272bdda713ca2a0ec66}{update\+Live\+Text}} ()
+\begin{DoxyCompactList}\small\item\em checks if spacebar is pressed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_level_ac30c9c04d14f136b48b0ef4b9510cb8e}{update\+Balls}} (sf\+::\+Time delta\+Time)
+\item 
+void \mbox{\hyperlink{class_level_ac9be51d41777a24a1e7c686385fd789a}{remove\+Dead\+Blocks}} ()
+\item 
+\mbox{\Hypertarget{class_level_a9b0f0a614469bc6ef439e15027ce6892}\label{class_level_a9b0f0a614469bc6ef439e15027ce6892}} 
+void {\bfseries update\+Score\+Text} ()
+\item 
+\mbox{\Hypertarget{class_level_ae0a42c8b37c146358d4485867121a229}\label{class_level_ae0a42c8b37c146358d4485867121a229}} 
+void \mbox{\hyperlink{class_level_ae0a42c8b37c146358d4485867121a229}{update\+Power\+Ups}} (sf\+::\+Time delta\+Time)
+\begin{DoxyCompactList}\small\item\em updates score string \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_level_ab1877a7ff6bfba7d58686545928ff853}{update\+Win\+Loss\+State}} ()
+\begin{DoxyCompactList}\small\item\em checks if any power up is alive and updates them \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_a849fc4358768f6de92884ffec1026f1f}\label{class_level_a849fc4358768f6de92884ffec1026f1f}} 
+void \mbox{\hyperlink{class_level_a849fc4358768f6de92884ffec1026f1f}{manage\+Power\+Ups}} (Power\+Up mypower, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_ball}{Ball}} $>$ \&ball, \mbox{\hyperlink{class_block}{Block}} \&block)
+\begin{DoxyCompactList}\small\item\em checks if list having bricks or balls is empty \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_level_a7bd65ad0bb1cd5d4607c8345068cf59a}\label{class_level_a7bd65ad0bb1cd5d4607c8345068cf59a}} 
+std\+::list$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_ball}{Ball}} $>$ $>$ {\bfseries balls}
+\item 
+\mbox{\Hypertarget{class_level_a343546cdb069c93b9b0af8c8d27ee149}\label{class_level_a343546cdb069c93b9b0af8c8d27ee149}} 
+std\+::list$<$ \mbox{\hyperlink{class_block}{Block}} $>$ {\bfseries blocks}
+\item 
+\mbox{\Hypertarget{class_level_a47ad169c6feb9b30c814eeedf5d8858d}\label{class_level_a47ad169c6feb9b30c814eeedf5d8858d}} 
+std\+::list$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_powerup}{Powerup}} $>$ $>$ {\bfseries powerups}
+\item 
+\mbox{\Hypertarget{class_level_af023d94559d93caffe4bb7bb6f3fd75e}\label{class_level_af023d94559d93caffe4bb7bb6f3fd75e}} 
+\mbox{\hyperlink{class_planc}{Planc}} {\bfseries planc}
+\item 
+\mbox{\Hypertarget{class_level_a0bc03ffec97dc7e3b4b28ea860372092}\label{class_level_a0bc03ffec97dc7e3b4b28ea860372092}} 
+sf\+::\+Sound {\bfseries Live\+Lost\+Sound}
+\item 
+\mbox{\Hypertarget{class_level_a9ce2da8d0ecc1044904da84f910f4abe}\label{class_level_a9ce2da8d0ecc1044904da84f910f4abe}} 
+sf\+::\+Sound {\bfseries New\+Ball\+Sound}
+\item 
+\mbox{\Hypertarget{class_level_a372446eaee23214316c6a70f7fdba044}\label{class_level_a372446eaee23214316c6a70f7fdba044}} 
+unsigned {\bfseries lives} = DEFAULT\+\_\+\+INITIAL\+\_\+\+LIVES
+\item 
+\mbox{\Hypertarget{class_level_aabaf4df5ee1ef91b9e18a1cfe47e7a64}\label{class_level_aabaf4df5ee1ef91b9e18a1cfe47e7a64}} 
+bool {\bfseries level\+\_\+started} = 0
+\item 
+\mbox{\Hypertarget{class_level_aefbf19bf522f196454b1f8dfbcc2dd6e}\label{class_level_aefbf19bf522f196454b1f8dfbcc2dd6e}} 
+unsigned {\bfseries score} = 0
+\item 
+\mbox{\Hypertarget{class_level_a55ed3dab1c654a45f14280e88455b7ed}\label{class_level_a55ed3dab1c654a45f14280e88455b7ed}} 
+sf\+::\+Sprite {\bfseries Upper\+Wall}
+\item 
+\mbox{\Hypertarget{class_level_a069ccae47e3af6bf369795c7ca29336e}\label{class_level_a069ccae47e3af6bf369795c7ca29336e}} 
+sf\+::\+Sprite {\bfseries Left\+Wall}
+\item 
+\mbox{\Hypertarget{class_level_a6bb7e5c24d70c934be26a0304cb0dd7c}\label{class_level_a6bb7e5c24d70c934be26a0304cb0dd7c}} 
+sf\+::\+Sprite {\bfseries Right\+Wall}
+\item 
+\mbox{\Hypertarget{class_level_a2bf68b6e4b7381e6d359cfff27a44333}\label{class_level_a2bf68b6e4b7381e6d359cfff27a44333}} 
+sf\+::\+Sprite {\bfseries Background}
+\item 
+\mbox{\Hypertarget{class_level_ad60ea0ead43b63b6f60166b834d71138}\label{class_level_ad60ea0ead43b63b6f60166b834d71138}} 
+sf\+::\+Sprite {\bfseries Heart\+Shape}
+\item 
+\mbox{\Hypertarget{class_level_a56b66f2d5663e8272727e4b6bdb8f18a}\label{class_level_a56b66f2d5663e8272727e4b6bdb8f18a}} 
+sf\+::\+Text {\bfseries Live\+Text}
+\item 
+\mbox{\Hypertarget{class_level_ab42d1864609e7e4e97079279ca8ebd40}\label{class_level_ab42d1864609e7e4e97079279ca8ebd40}} 
+sf\+::\+Text {\bfseries Score\+Text}
+\item 
+\mbox{\Hypertarget{class_level_a30e931cc6df1c4c52a1509252b8a1d70}\label{class_level_a30e931cc6df1c4c52a1509252b8a1d70}} 
+sf\+::\+Text {\bfseries Start\+Level\+Text}
+\item 
+\mbox{\Hypertarget{class_level_a66a02088bbc6c683e8da06b9e5198972}\label{class_level_a66a02088bbc6c683e8da06b9e5198972}} 
+unsigned {\bfseries Start\+Level\+Text\+Opacity} = 255
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class for start a level choosen and play 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_level_a9b7478818e1aa80d3d4d059fa5faf9bf}\label{class_level_a9b7478818e1aa80d3d4d059fa5faf9bf}} 
+\index{Level@{Level}!draw@{draw}}
+\index{draw@{draw}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Level\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+renders all which has to be displayed Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_level_ad54b0dda1e7775b045ac253a1295268f}\label{class_level_ad54b0dda1e7775b045ac253a1295268f}} 
+\index{Level@{Level}!Load@{Load}}
+\index{Load@{Load}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void Level\+::\+Load (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{class_block}{Block}} $>$}]{info }\end{DoxyParamCaption})}
+
+loads info abt the custom made or pre made level
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_level_ac9be51d41777a24a1e7c686385fd789a}\label{class_level_ac9be51d41777a24a1e7c686385fd789a}} 
+\index{Level@{Level}!removeDeadBlocks@{removeDeadBlocks}}
+\index{removeDeadBlocks@{removeDeadBlocks}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{removeDeadBlocks()}{removeDeadBlocks()}}
+{\footnotesize\ttfamily void Level\+::remove\+Dead\+Blocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+removes all dead balls(balls gone out of bounds) Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{class_level_a3fbebdbe8d206602492f486ccbb3ccfe}\label{class_level_a3fbebdbe8d206602492f486ccbb3ccfe}} 
+\index{Level@{Level}!StartLevel@{StartLevel}}
+\index{StartLevel@{StartLevel}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{StartLevel()}{StartLevel()}}
+{\footnotesize\ttfamily void Level\+::\+Start\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+initialises level Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{class_level_a93cd07946ca9a358fd677265e90fcfce}\label{class_level_a93cd07946ca9a358fd677265e90fcfce}} 
+\index{Level@{Level}!update@{update}}
+\index{update@{update}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Level\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{delta\+Time }\end{DoxyParamCaption})}
+
+updates whole game
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{class_level_ac30c9c04d14f136b48b0ef4b9510cb8e}\label{class_level_ac30c9c04d14f136b48b0ef4b9510cb8e}} 
+\index{Level@{Level}!updateBalls@{updateBalls}}
+\index{updateBalls@{updateBalls}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{updateBalls()}{updateBalls()}}
+{\footnotesize\ttfamily void Level\+::update\+Balls (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+updates the balls on screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 7
+Here is the caller graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{class_level_ab1877a7ff6bfba7d58686545928ff853}\label{class_level_ab1877a7ff6bfba7d58686545928ff853}} 
+\index{Level@{Level}!updateWinLossState@{updateWinLossState}}
+\index{updateWinLossState@{updateWinLossState}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{updateWinLossState()}{updateWinLossState()}}
+{\footnotesize\ttfamily void Level\+::update\+Win\+Loss\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+checks if any power up is alive and updates them 
+
+win
+
+game lostHere is the call graph for this function\+:
+% FIG 9
+Here is the caller graph for this function\+:
+% FIG 10
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/level.\+h\item 
+src/level.\+cpp\end{DoxyCompactItemize}

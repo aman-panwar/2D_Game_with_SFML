@@ -1,0 +1,102 @@
+\hypertarget{class_screen_manager}{}\doxysection{Screen\+Manager Class Reference}
+\label{class_screen_manager}\index{ScreenManager@{ScreenManager}}
+
+
+This is a sigleton Class which changes the screeen currenntly in use.  
+
+
+
+
+{\ttfamily \#include $<$screenmanager.\+h$>$}
+
+
+
+Collaboration diagram for Screen\+Manager\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_screen_manager_a6c50d7beedf85938140fd2bbfb4efb99}{go\+To\+Screen}} (Screen screen\+Name)
+\item 
+std\+::optional$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_game_screen}{Game\+Screen}} $>$ $>$ \mbox{\hyperlink{class_screen_manager_ae1903521368d6609d630d81c29762839}{cur\+Screen}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_screen_manager}{Screen\+Manager}} $\ast$ \mbox{\hyperlink{class_screen_manager_a7ed4e4407bf8d4518fd21cb8b2638f79}{Get\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em lazy initialises the \mbox{\hyperlink{class_screen_manager}{Screen\+Manager}} and sets the initial screen of the gmae \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_screen_manager_aef3db42ac0d6b152bd7e37f664ee3b2a}\label{class_screen_manager_aef3db42ac0d6b152bd7e37f664ee3b2a}} 
+{\bfseries Screen\+Manager} (\mbox{\hyperlink{class_screen_manager}{Screen\+Manager}} const \&)
+\item 
+\mbox{\Hypertarget{class_screen_manager_a18e423fff0decea71391fc48d64ccf65}\label{class_screen_manager_a18e423fff0decea71391fc48d64ccf65}} 
+\mbox{\hyperlink{class_screen_manager}{Screen\+Manager}} \& {\bfseries operator=} (\mbox{\hyperlink{class_screen_manager}{Screen\+Manager}} const \&)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_screen_manager_adcfe662e385808c1bd72d3704866f721}\label{class_screen_manager_adcfe662e385808c1bd72d3704866f721}} 
+std\+::stack$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_game_screen}{Game\+Screen}} $>$ $>$ \mbox{\hyperlink{class_screen_manager_adcfe662e385808c1bd72d3704866f721}{Screen\+Stack}}
+\begin{DoxyCompactList}\small\item\em Stores the Screens of the \mbox{\hyperlink{class_game}{Game}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_screen_manager_a5ea14ffd49535f0353fd9f340209b9f6}\label{class_screen_manager_a5ea14ffd49535f0353fd9f340209b9f6}} 
+Screen \mbox{\hyperlink{class_screen_manager_a5ea14ffd49535f0353fd9f340209b9f6}{cur\+Screen\+Name}}
+\begin{DoxyCompactList}\small\item\em Store the name of the current screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_screen_manager_a228ff44ce642c1f2be98438ff16c51b4}\label{class_screen_manager_a228ff44ce642c1f2be98438ff16c51b4}} 
+static \mbox{\hyperlink{class_screen_manager}{Screen\+Manager}} $\ast$ {\bfseries instance} = NULL
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a sigleton Class which changes the screeen currenntly in use. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_screen_manager_ae1903521368d6609d630d81c29762839}\label{class_screen_manager_ae1903521368d6609d630d81c29762839}} 
+\index{ScreenManager@{ScreenManager}!curScreen@{curScreen}}
+\index{curScreen@{curScreen}!ScreenManager@{ScreenManager}}
+\doxysubsubsection{\texorpdfstring{curScreen()}{curScreen()}}
+{\footnotesize\ttfamily std\+::optional$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_game_screen}{Game\+Screen}} $>$ $>$ Screen\+Manager\+::cur\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+return the pointer to the current screen in use \begin{DoxyReturn}{Returns}
+pointer to the current screen in use 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{class_screen_manager_a7ed4e4407bf8d4518fd21cb8b2638f79}\label{class_screen_manager_a7ed4e4407bf8d4518fd21cb8b2638f79}} 
+\index{ScreenManager@{ScreenManager}!GetManager@{GetManager}}
+\index{GetManager@{GetManager}!ScreenManager@{ScreenManager}}
+\doxysubsubsection{\texorpdfstring{GetManager()}{GetManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_screen_manager}{Screen\+Manager}} $\ast$ Screen\+Manager\+::\+Get\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+lazy initialises the \mbox{\hyperlink{class_screen_manager}{Screen\+Manager}} and sets the initial screen of the gmae 
+
+setting initial screen for the gameHere is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_screen_manager_a6c50d7beedf85938140fd2bbfb4efb99}\label{class_screen_manager_a6c50d7beedf85938140fd2bbfb4efb99}} 
+\index{ScreenManager@{ScreenManager}!goToScreen@{goToScreen}}
+\index{goToScreen@{goToScreen}!ScreenManager@{ScreenManager}}
+\doxysubsubsection{\texorpdfstring{goToScreen()}{goToScreen()}}
+{\footnotesize\ttfamily bool Screen\+Manager\+::go\+To\+Screen (\begin{DoxyParamCaption}\item[{Screen}]{screen\+Name }\end{DoxyParamCaption})}
+
+tries to go to a target screen 
+\begin{DoxyParams}{Parameters}
+{\em screen\+Name} & target screen to visit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the target screen was valid and put in use otherwise false 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/screenmanager.\+h\item 
+src/screenmanager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+\hypertarget{class_text_button}{}\doxysection{Text\+Button Class Reference}
+\label{class_text_button}\index{TextButton@{TextButton}}
+
+
+class for button that diplays a text  
+
+
+
+
+{\ttfamily \#include $<$textbutton.\+h$>$}
+
+
+
+Inheritance diagram for Text\+Button\+:
+% FIG 0
+
+
+Collaboration diagram for Text\+Button\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text_button_ac0d8fbba2f2cc22e52cdc18577a38271}{Text\+Button}} (std\+::string button\+Text, sf\+::\+Vector2f pos, float width, float height)
+\item 
+\mbox{\Hypertarget{class_text_button_ae1501f3daeb3dd40d10070f071a8a73d}\label{class_text_button_ae1501f3daeb3dd40d10070f071a8a73d}} 
+void \mbox{\hyperlink{class_text_button_ae1501f3daeb3dd40d10070f071a8a73d}{draw}} ()
+\begin{DoxyCompactList}\small\item\em renders the button onto the screen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_text_button_a401808bb6c1a6e2d0a751121d9cdb218}\label{class_text_button_a401808bb6c1a6e2d0a751121d9cdb218}} 
+void \mbox{\hyperlink{class_text_button_a401808bb6c1a6e2d0a751121d9cdb218}{update}} ()
+\begin{DoxyCompactList}\small\item\em play the approprite sound, changes colour, and changes the clicked state of the button \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_text_button_ab49ee2d35c298a7a2c951113bcb88393}\label{class_text_button_ab49ee2d35c298a7a2c951113bcb88393}} 
+sf\+::\+Rectangle\+Shape {\bfseries box}
+\item 
+\mbox{\Hypertarget{class_text_button_ae325de32f80c89a126103f3734ff9e53}\label{class_text_button_ae325de32f80c89a126103f3734ff9e53}} 
+sf\+::\+Text {\bfseries text}
+\item 
+\mbox{\Hypertarget{class_text_button_a0aa5f9a6adb87ee3e3878a0e9ad0bb27}\label{class_text_button_a0aa5f9a6adb87ee3e3878a0e9ad0bb27}} 
+sf\+::\+Color {\bfseries Idle\+Colour}
+\item 
+\mbox{\Hypertarget{class_text_button_ac7016a81c87a995aab8881dd81f70917}\label{class_text_button_ac7016a81c87a995aab8881dd81f70917}} 
+sf\+::\+Color {\bfseries Hover\+Colour}
+\item 
+\mbox{\Hypertarget{class_text_button_a0c2e3dc3377fdc9c17f4ce9f8bc7763c}\label{class_text_button_a0c2e3dc3377fdc9c17f4ce9f8bc7763c}} 
+sf\+::\+Color {\bfseries Clicked\+Colour}
+\item 
+\mbox{\Hypertarget{class_text_button_a466499b20daa98222300cb9c761b239c}\label{class_text_button_a466499b20daa98222300cb9c761b239c}} 
+sf\+::\+Color {\bfseries Border\+Colour}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+class for button that diplays a text 
+
+derived from \mbox{\hyperlink{class_button}{Button}} class declared in \mbox{\hyperlink{button_8h_source}{button.\+h}} This class is similar to spritebutton 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_text_button_ac0d8fbba2f2cc22e52cdc18577a38271}\label{class_text_button_ac0d8fbba2f2cc22e52cdc18577a38271}} 
+\index{TextButton@{TextButton}!TextButton@{TextButton}}
+\index{TextButton@{TextButton}!TextButton@{TextButton}}
+\doxysubsubsection{\texorpdfstring{TextButton()}{TextButton()}}
+{\footnotesize\ttfamily Text\+Button\+::\+Text\+Button (\begin{DoxyParamCaption}\item[{std\+::string}]{button\+Text,  }\item[{sf\+::\+Vector2f}]{pos,  }\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})}
+
+constructor for the class 
+\begin{DoxyParams}{Parameters}
+{\em button\+Text} & the text to be displayed \\
+\hline
+{\em pos} & the cordinates of the centre of the button \\
+\hline
+{\em width} & the width of the button \\
+\hline
+{\em height} & the height of the button \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/buttons/textbutton.\+h\item 
+src/buttons/textbutton.\+cpp\end{DoxyCompactItemize}
